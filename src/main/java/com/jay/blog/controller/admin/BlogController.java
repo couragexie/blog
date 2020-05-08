@@ -95,6 +95,7 @@ public class BlogController {
     @PostMapping("/search")
     public String search(@RequestParam(value = "pageNo", defaultValue = "1") Integer pageNo,
                          BlogQuery blogQuery, ModelMap model){
+        // TODO 查询不到指定的blog， 则提供一个查询失败的页面
         // 默认 size = 10
         Page<Blog> page = new Page<>();
         List<OrderItem> orderItems = new ArrayList<>();

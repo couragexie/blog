@@ -16,7 +16,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  **/
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-
+    /**
+     * @Author: jay
+     * @Description: 拦截器
+     * @Date 2020/5/8 23:26
+     **/
     @Override
     public void addInterceptors(InterceptorRegistry registry){
         registry.addInterceptor(new LoginInterceptor())
