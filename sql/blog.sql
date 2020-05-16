@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS b_blog;
 create table `b_blog`(
     `id` bigint(32) not null auto_increment,
     `title` varchar(256) not null,
-    `content` longtext not null comment'文章内容',
+    `content` longtext  character set utf8mb4 collate utf8mb4_unicode_ci not null comment'文章内容',
     `first_picture` varchar(256) default null comment'文章首图',
     `description` varchar(256) default null comment'文章描述',
     `views` int default 0,
