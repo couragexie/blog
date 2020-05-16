@@ -2,8 +2,11 @@
 个人博客项目
 
 开发环境：Idea + Maven + Mysql
+
 后端使用技术：SpringBoot + SpringMVC + Spring + Mybatis Plus + Themeleaf 模版  
+
 前端UI框架： Semantic UI
+
 前端插件：
 
 - [编辑器 Markdown](https://pandao.github.io/editor.md/)
