@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9de6431-bce0-43e5-9523-1d9a6c896c60" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blog" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blog" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="22ce2d56-cc65-4ae0-a2ba-56400c5e275a">
+        <node key="myblog" />
+      </node>
+    </checked>
+    <expanded>
+      <node key="22ce2d56-cc65-4ae0-a2ba-56400c5e275a" />
+    </expanded>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZvIsvRtkX6Rvzav0BuA0P8VUAo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jay.blog.controller.admin" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources\static" />
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources\templates\admin" />
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jay.blog.controller" />
+      <recent name="com.jay.blog.controller.admin" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jay.blog.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jay\Desktop\blog-master\src\main\resources\static\images" />
+      <recent name="C:\Users\Jay\Desktop\blog-master\src\main\resources\static" />
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources\static\images" />
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources" />
+      <recent name="D:\project\Java\blog\blog 后台\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jay.blog.utils.MD5Utils" />
+      <module name="blog 后台" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jay.blog.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog 后台" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jay.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jay.blog" />
+      <option name="MAIN_CLASS_NAME" value="com.jay.blog.BlogApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog 后台" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jay.blog.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jay.blog.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.jay.blog.controller.admin.ServiceTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog 后台" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jay.blog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jay.blog.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.jay.blog.controller.admin.ServiceTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeControllerTest.types" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog 后台" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jay.blog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jay.blog.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.jay.blog.controller.admin.TypeControllerTest" />
+      <option name="METHOD_NAME" value="types" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog 后台" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jay.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BlogApplicationTests.test" />
+        <item itemvalue="JUnit.ServiceTest.test02" />
+        <item itemvalue="JUnit.ServiceTest.test1" />
+        <item itemvalue="Application.MD5Utils" />
+        <item itemvalue="JUnit.TypeControllerTest.types" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9de6431-bce0-43e5-9523-1d9a6c896c60" name="Default Changelist" comment="" />
+      <created>1585713350749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585713350749</updated>
+      <workItem from="1585713354657" duration="11032000" />
+      <workItem from="1585813538115" duration="16942000" />
+      <workItem from="1585881298020" duration="29440000" />
+      <workItem from="1585973720961" duration="25111000" />
+      <workItem from="1586053869494" duration="32524000" />
+      <workItem from="1586141295080" duration="28680000" />
+      <workItem from="1586225077076" duration="14266000" />
+      <workItem from="1586358473899" duration="2353000" />
+      <workItem from="1586507292788" duration="1242000" />
+      <workItem from="1586513667902" duration="6429000" />
+      <workItem from="1586674089889" duration="3464000" />
+      <workItem from="1586692315287" duration="4815000" />
+      <workItem from="1586745437240" duration="27159000" />
+      <workItem from="1587279951606" duration="5281000" />
+      <workItem from="1587372684790" duration="811000" />
+      <workItem from="1587988601310" duration="811000" />
+      <workItem from="1588861997996" duration="1071000" />
+      <workItem from="1588945156126" duration="6373000" />
+      <workItem from="1589188088060" duration="2485000" />
+      <workItem from="1589439860420" duration="8676000" />
+      <workItem from="1594015771044" duration="2123000" />
+      <workItem from="1594087675102" duration="1200000" />
+      <workItem from="1594261646878" duration="9464000" />
+      <workItem from="1594604148955" duration="5001000" />
+      <workItem from="1594780884650" duration="6613000" />
+      <workItem from="1594866790924" duration="3547000" />
+      <workItem from="1594955979061" duration="2338000" />
+      <workItem from="1595209155659" duration="682000" />
+      <workItem from="1595407544814" duration="1826000" />
+      <workItem from="1597137539774" duration="2704000" />
+      <workItem from="1597385458710" duration="5405000" />
+      <workItem from="1597821094849" duration="6128000" />
+      <workItem from="1597907412517" duration="9822000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1597907322872">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597907322872" />
+    <state width="741" height="403" key="GridCell.Tab.0.bottom" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="77" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589595768225" />
+    <state width="741" height="403" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.0.center" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="77" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589595768225" />
+    <state width="741" height="403" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.0.left" timestamp="1597920040237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="77" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589595768225" />
+    <state width="741" height="403" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597920040237" />
+    <state width="741" height="403" key="GridCell.Tab.0.right" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="77" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589595768225" />
+    <state width="741" height="403" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.1.bottom" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="50" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589595617739" />
+    <state width="741" height="403" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.1.center" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="50" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589595617739" />
+    <state width="741" height="403" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.1.left" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="50" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589595617739" />
+    <state width="741" height="403" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="741" height="403" key="GridCell.Tab.1.right" timestamp="1597920040238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="50" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589595617739" />
+    <state width="741" height="403" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597920040238" />
+    <state width="1483" height="295" key="GridCell.Tab.2.bottom" timestamp="1597914937069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="51" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589444375308" />
+    <state width="1483" height="295" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597914937069" />
+    <state width="1483" height="295" key="GridCell.Tab.2.center" timestamp="1597914937069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="51" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1589444375308" />
+    <state width="1483" height="295" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1597914937069" />
+    <state width="1483" height="295" key="GridCell.Tab.2.left" timestamp="1597914937069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="51" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1589444375308" />
+    <state width="1483" height="295" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1597914937069" />
+    <state width="1483" height="295" key="GridCell.Tab.2.right" timestamp="1597914937069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="51" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1589444375308" />
+    <state width="1483" height="295" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1597914937069" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1597907325019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597907325019" />
+    <state x="0" y="0" key="new project wizard" timestamp="1597212234483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1597212234483" />
+    <state x="364" y="1" width="840" height="822" key="search.everywhere.popup" timestamp="1597912511090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="364" y="1" width="840" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597912511090" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/CommentServiceImp.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/CommentServiceImp.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/CommentServiceImp.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/controller/admin/BlogController.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/BlogServiceImp.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/BlogServiceImp.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/BlogServiceImp.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../working/maven_repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE-sources.jar!/org/springframework/cache/interceptor/CacheInterceptor.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jay/blog/BlogApplicationTests.java</url>
+          <line>37</line>
+          <properties class="com.jay.blog.BlogApplicationTests" method="test">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jay/blog/service/Imp/BlogServiceImp.java</url>
+          <line>140</line>
+          <properties class="com.jay.blog.service.Imp.BlogServiceImp" method="getAndConvertById" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="commentVOS.get(1).replyComments" />
+        <watch expression="commentVO1.parentComment.id" language="JAVA" />
+        <watch expression="commentVO.id" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="size" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
