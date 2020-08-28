@@ -14,4 +14,16 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
 
-comment.avatar:  /images/avatar.png
+
+comment.avatar: /images/avatar.png
+
+---
+
+# redis configuration
+spring:
+  redis:
+    database: 0
+    host: 120.78.158.142
+    port: 6379
+    password:
+

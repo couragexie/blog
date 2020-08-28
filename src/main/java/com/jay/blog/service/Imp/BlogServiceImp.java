@@ -17,9 +17,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -136,6 +136,7 @@ public class BlogServiceImp implements BlogService {
 
 
     @Override
+    @Cacheable(cacheNames = "blog", key = "#id")
     public BlogVO getAndConvertById(Long id) throws NotFoundException {
         Blog blog = blogDao.selectById(id);
         if(blog == null)
@@ -145,6 +146,7 @@ public class BlogServiceImp implements BlogService {
         blogDao.updateViews(id);
         blog.setViews(blog.getViews()+1);
         BlogVO blogVO = BlogAndBlogVOConverter.blogToBlogVo(blog);
+        log.info("获取id为 {} 的博客", id);
         return blogVO;
     }
 

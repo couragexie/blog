@@ -1,10 +1,10 @@
 package com.jay.blog.vo;
 
-import ch.qos.logback.core.boolex.EvaluationException;
 import com.jay.blog.entity.*;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,7 +16,9 @@ import java.util.List;
  * @create: 2020-04-04 17:22
  **/
 @Data
+
 public class BlogVO {
+
     private Long id;
 
     /*标题*/

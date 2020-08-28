@@ -11,6 +11,10 @@ body {
     background-position:center center !important
 }
 
+.m-navigation-icon{
+    margin-right: 6px !important;
+}
+
 .m-padded-mini {
     padding: 0.2em !important;
 }
