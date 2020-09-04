@@ -31,7 +31,6 @@ public class TagServiceImp implements TagService {
 
     @Override
     public Page<Tag> listTag(Page<Tag> page) {
-
         return tagDao.selectPage(page, null);
     }
 

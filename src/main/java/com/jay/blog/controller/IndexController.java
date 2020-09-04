@@ -104,24 +104,27 @@ public class IndexController {
         return "blog";
     }
 
-    @PostMapping("/search")
-    public String search(@RequestParam(defaultValue = "1") Integer pageNO,
+    @GetMapping("/search")
+    public String search(@RequestParam(defaultValue = "1") Integer pageNo,
                          @RequestParam String query, Model model) {
         // 构建 page 查询
         Page<Blog> page = new Page<>();
-        page.setCurrent(pageNO);
+        page.setCurrent(pageNo);
         List<OrderItem> orderItems = new ArrayList<>();
         orderItems.add(new OrderItem().setColumn("update_time").setAsc(false));
         // 获取到结果
         Page<BlogVO> resultPage = blogService.listBlog(query, page);
-        // 设置 user；
-        setUser(resultPage.getRecords());
-        List<Type> types = typeService.listType();
-        // 设置result 中 record 中所有 blogVO 的 type。
-        setBlogVOTypeName(resultPage.getRecords());
 
+        if (page.getRecords() != null && page.getRecords().size()>0) {
+            // 设置 user；
+            setUser(resultPage.getRecords());
+            List<Type> types = typeService.listType();
+            // 设置 result 中 record 中所有 blogVO 的 type。
+            setBlogVOTypeName(resultPage.getRecords());
+        }
         model.addAttribute("page", resultPage);
         model.addAttribute("query", query);
+
         return "search";
     }
 

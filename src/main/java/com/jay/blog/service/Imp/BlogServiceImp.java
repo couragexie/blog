@@ -41,7 +41,7 @@ public class BlogServiceImp implements BlogService {
     @Autowired
     private BlogAndTagDao blogAndTagDao;
 
-    /* 获取全部博客*/
+    /* 获取一页博客*/
     @Override
     public Page<BlogVO> listBlog(Page<Blog> page) {
         page =  blogDao.selectPageOrderByCreateTime(page);
@@ -112,14 +112,15 @@ public class BlogServiceImp implements BlogService {
 
     @Override
     public Page<BlogVO> listBlog(String query, Page<Blog> page) {
-        QueryWrapper<Blog> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like("title", query);
-        queryWrapper.like("content", query);
-        // 返回的是 Page<Blog>
-        page = blogDao.selectPage(page, queryWrapper);
+
+        blogDao.listBlogByQuery(query,page);
+
         Page<BlogVO> resultPage = new Page<>();
         // 将 page 的值赋值给 resultPage
-        BeanUtils.copyProperties(page, resultPage);
+        // 指定字段不复制
+        List<String> excludeFiled = new ArrayList<>();
+        excludeFiled.add("records");
+        BeanUtils.copyProperties(page, resultPage,excludeFiled.toArray(new String[excludeFiled.size()]));
         // 转换 page 中records，转成 BlogVO
         List<BlogVO> blogVOS = page.getRecords().stream()
                                 .map(e->BlogAndBlogVOConverter.blogToBlogVo(e))

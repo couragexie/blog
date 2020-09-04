@@ -1,6 +1,7 @@
 package com.jay.blog.config;
 
 import com.jay.blog.interceptor.LoginInterceptor;
+import com.jay.blog.interceptor.VisitedInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -27,9 +28,12 @@ public class WebConfig implements WebMvcConfigurer {
                 .addPathPatterns("/admin/**") // 指定拦截 /admin 路径下的任意请求， /** 任意请求
                 .excludePathPatterns("/admin") // 排出拦截请求，指定范文 /admin, or /admin/login
                 .excludePathPatterns("/admin/login");
-
+        registry.addInterceptor(new VisitedInterceptor())
+                .addPathPatterns("/**")
+                .excludePathPatterns("/css/**")  // 不拦截静态资源
+                .excludePathPatterns("/images/**")
+                .excludePathPatterns("/lib/**");
     }
-
 
 
     @Override

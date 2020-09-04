@@ -23,7 +23,6 @@ public interface BlogDao extends BaseMapper<Blog> {
     @Select("select function('date_format',create_time, '%Y') as year from b_blog group by function('date_format', create_time, '%Y')")
     public List<String> selectGroupYear();
 
-
     @Select("select * from b_blog where id in(select blog_id from b_blog_tag where tag_id=#{tagId})")
     public Page<Blog> selectPageByTagId(Long tagId, Page<Blog> page);
 //    @Results(id = "blogVOMap",value = {
@@ -34,4 +33,7 @@ public interface BlogDao extends BaseMapper<Blog> {
 
     @Select("select * from b_blog order by create_time desc")
     public Page<Blog> selectPageOrderByCreateTime(Page<Blog> page);
+
+    @Select("select * from b_blog where match(title,content) against(#{query})")
+    public Page<Blog> listBlogByQuery(String query, Page<Blog> page);
 }

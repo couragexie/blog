@@ -46,6 +46,5 @@ class BlogApplicationTests {
 //        page.setOrders(orderItems);
 //        System.out.println(blogDao.selectPageByTagId((long)8, page).getRecords().size());
 //
-        tagDao.listTag((long)8).stream().forEach(System.out::println);
     }
 }

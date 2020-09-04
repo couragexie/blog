@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @create: 2020-04-03 15:43
  **/
 
-public class LoginInterceptor extends HandlerInterceptorAdapter {
+public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
