@@ -1,8 +1,9 @@
 package com.jay.blog.service.Imp;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jay.blog.cache.RedisCache;
+import com.jay.blog.cache.RedisCacheRemove;
 import com.jay.blog.converter.BlogAndBlogVOConverter;
 import com.jay.blog.converter.TagConverter;
 import com.jay.blog.dao.BlogAndTagDao;
@@ -22,6 +23,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -69,6 +71,7 @@ public class BlogServiceImp implements BlogService {
     }
 
     /* 根据typeId 获取博客*/
+    //@RedisCache(cacheNames = "blog&type", key = "#typeId", expire = 1, unit = TimeUnit.HOURS)
     public Page<BlogVO> listBlogByTypeId(Long typeId, Page<Blog> page){
         page = blogDao.selectPage(page, new QueryWrapper<Blog>().eq("type_id", typeId));
         Page<BlogVO> resultPage = new Page<>();
@@ -137,7 +140,7 @@ public class BlogServiceImp implements BlogService {
 
 
     @Override
-    @Cacheable(cacheNames = "blog", key = "#id")
+    @RedisCache(cacheNames = "blog", key = "#id", expire = 60*60*12)
     public BlogVO getAndConvertById(Long id) throws NotFoundException {
         Blog blog = blogDao.selectById(id);
         if(blog == null)
@@ -154,6 +157,7 @@ public class BlogServiceImp implements BlogService {
 
     /* 根据标签获取 id， 按照更新时间排序*/
     @Override
+    @RedisCache(cacheNames = "blog&tagId", key = "#{tagId}" ,expire = 60*60)
     public List<Blog> listBlog(Long tagId) {
         return blogDao.selectList(new QueryWrapper<Blog>()
                                         .eq("tag_id", tagId)
@@ -166,8 +170,8 @@ public class BlogServiceImp implements BlogService {
     }
 
     @Override
+    @RedisCache(cacheNames = "recommendBlog")
     public List<BlogVO> listRecommendBlogTop(Integer size) {
-
         return blogDao.selectRecommendTop(size)
                                      .stream()
                                      .map(e-> BlogAndBlogVOConverter.blogToBlogVo(e))
@@ -198,25 +202,28 @@ public class BlogServiceImp implements BlogService {
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "recommendBlog")
     @Transactional
     public int saveOne(BlogVO blogVO) {
         Blog blog = BlogAndBlogVOConverter.blogVOToBlog(blogVO);
-        System.out.println("blogId" + blog.getId());
+        //System.out.println("blogId" + blog.getId());
         int ok = blogDao.insert(blog);
         // 将 blogVO 中一个包含所有标签的String值转成List<Long>,
         // 然后再通过 Lambada 转成 List<BlogAndTag>
-        System.out.println("blogId" + blog.getId());
+        //System.out.println("blogId" + blog.getId());
         List<BlogAndTag> blogAndTags = TagConverter.StringTagIdsToListTag(blogVO.getTagIds()).stream()
                                                 .map(e-> new BlogAndTag(blog.getId(), e))
                                                 .collect(Collectors.toList());
-
         for (BlogAndTag blogAndTag : blogAndTags )
             blogAndTagDao.insert(blogAndTag);
+
+        log.info("添加博客成功！blogId={}, title={}", blog.getId(), blog.getTitle());
 
         return ok;
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "blog", key = "#{blogVO.getId()}")
     @Transactional
     public int updateOne(BlogVO blogVO) throws NotFoundException {
         Blog blog = blogDao.selectById(blogVO.getId());
@@ -238,10 +245,12 @@ public class BlogServiceImp implements BlogService {
         for(BlogAndTag blogAndTag : blogAndTags)
             blogAndTagDao.insert(blogAndTag);
 
+        log.info("修改博客成功！blogId={}, title={}", blog.getId(), blog.getTitle());
         return ok;
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "blog", key = "#{id}")
     @Transactional
     public int deleteOne(Long id) {
         int ok = blogDao.deleteById(id);

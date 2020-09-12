@@ -7,6 +7,7 @@ import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 /**
  * @program: blog
@@ -21,7 +22,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 @Component
 @TableName("b_tag")
-public class Tag {
+public class Tag implements Serializable {
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
     @NotBlank(message = "名称不能为空")

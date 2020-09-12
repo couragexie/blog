@@ -17,7 +17,7 @@ import java.util.List;
  **/
 @Data
 
-public class BlogVO {
+public class BlogVO implements Serializable{
 
     private Long id;
 

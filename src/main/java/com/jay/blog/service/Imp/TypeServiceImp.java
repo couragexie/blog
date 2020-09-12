@@ -3,6 +3,8 @@ package com.jay.blog.service.Imp;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jay.blog.cache.RedisCache;
+import com.jay.blog.cache.RedisCacheRemove;
 import com.jay.blog.dao.TypeDao;
 import com.jay.blog.entity.Tag;
 import com.jay.blog.entity.Type;
@@ -35,12 +37,14 @@ public class TypeServiceImp implements TypeService {
 
 
     @Override
+    @RedisCache(cacheNames = "type")
     public List<Type> listType() {
         return typeDao.selectList(null);
     }
 
 
     @Override
+    @RedisCacheRemove(cacheName = "type")
     public int saveOne(Type type) {
         return typeDao.insert(type);
     }
@@ -56,11 +60,13 @@ public class TypeServiceImp implements TypeService {
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "type")
     public int delete(Long id) {
         return typeDao.deleteById(id);
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "type")
     public int update(Type type) {
         return typeDao.updateById(type);
     }

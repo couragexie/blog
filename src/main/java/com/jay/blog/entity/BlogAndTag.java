@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * @program: blog
  * @description:
@@ -19,7 +21,7 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 @TableName("b_blog_tag")
-public class BlogAndTag {
+public class BlogAndTag implements Serializable {
 
     private Long blogId;
 

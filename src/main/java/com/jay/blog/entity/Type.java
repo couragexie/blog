@@ -8,6 +8,8 @@ import lombok.*;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * @program: blog
  * @description: 分类
@@ -21,7 +23,7 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 @TableName("b_type")
-public class Type {
+public class Type implements Serializable {
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
 

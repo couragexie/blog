@@ -3,6 +3,8 @@ package com.jay.blog.vo;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /**
  * @program: blog
  * @description:
@@ -11,7 +13,7 @@ import lombok.ToString;
  **/
 @ToString
 @Data
-public class TagVO {
+public class TagVO implements Serializable {
     private Long id;
     private String name;
 

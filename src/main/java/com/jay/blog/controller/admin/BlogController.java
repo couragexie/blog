@@ -158,18 +158,19 @@ public class BlogController {
                        RedirectAttributes attributes, HttpSession session) throws NotFoundException {
         blogVO.setUser(new User( ((User)session.getAttribute("user")).getId() ) );
 
-        int ok;
+        int ok = -1;
         if (blogVO.getId() == null)
             ok = blogService.saveOne(blogVO);
         else
             ok = blogService.updateOne(blogVO);
 
-        if(ok != 0) {
+        if(ok != -1) {
             attributes.addAttribute("message", "添加成功");
 
         }else {
             attributes.addAttribute("message", "添加失败");
         }
+
         return REDIRECT_LIST;
     }
 

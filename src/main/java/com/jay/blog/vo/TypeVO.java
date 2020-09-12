@@ -5,6 +5,7 @@ import lombok.Data;
 import org.apache.catalina.LifecycleState;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
  **/
 @Data
 @Component
-public class TypeVO {
+public class TypeVO implements Serializable {
     private Long id;
     private String name;
 

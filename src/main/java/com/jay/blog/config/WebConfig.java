@@ -30,6 +30,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/admin/login");
         registry.addInterceptor(new VisitedInterceptor())
                 .addPathPatterns("/**")
+                .excludePathPatterns("/admin/**")
                 .excludePathPatterns("/css/**")  // 不拦截静态资源
                 .excludePathPatterns("/images/**")
                 .excludePathPatterns("/lib/**");

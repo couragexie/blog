@@ -2,6 +2,8 @@ package com.jay.blog.service.Imp;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jay.blog.cache.RedisCache;
+import com.jay.blog.cache.RedisCacheRemove;
 import com.jay.blog.converter.TagConverter;
 import com.jay.blog.dao.BlogAndTagDao;
 import com.jay.blog.dao.TagDao;
@@ -10,6 +12,7 @@ import com.jay.blog.entity.Tag;
 import com.jay.blog.service.TagService;
 import com.jay.blog.vo.TagVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,6 +25,7 @@ import java.util.stream.Collectors;
  * @create: 2020-04-04 14:49
  **/
 @Service
+@CacheConfig(cacheNames = "tag")
 public class TagServiceImp implements TagService {
     @Autowired
     private TagDao tagDao;
@@ -35,6 +39,7 @@ public class TagServiceImp implements TagService {
     }
 
     @Override
+    @RedisCache(cacheNames = "tag")
     public List<Tag> listTag() {
         return tagDao.selectList(null);
     }
@@ -66,16 +71,19 @@ public class TagServiceImp implements TagService {
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "tag", key = "*")
     public int saveOne(Tag tag) {
         return tagDao.insert(tag);
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "tag", key = "*")
     public int updateOne(Tag tag) {
         return tagDao.updateById(tag);
     }
 
     @Override
+    @RedisCacheRemove(cacheName = "tag", key = "*")
     public int deleteOne(Long id) {
         return tagDao.deleteById(id);
     }

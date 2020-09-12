@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -20,7 +21,7 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 @Data
-public class CommentVO {
+public class CommentVO implements Serializable {
     /* id */
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;

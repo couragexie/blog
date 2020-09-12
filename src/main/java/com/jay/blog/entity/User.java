@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -22,7 +23,7 @@ import java.util.Date;
 @Data
 @Component
 @TableName("b_user")
-public class User {
+public class User implements Serializable {
     @TableId(value = "id",type = IdType.AUTO)    private Long id;
     private String nickname;
     private String username;

@@ -51,7 +51,7 @@ public class TypeShowController {
         orderItems.add(new OrderItem().setColumn("create_time").setAsc(false));
         page.setOrders(orderItems);
 
-        List<TypeVO> types = typeService.listTypeTop(100);
+        List<TypeVO> types = typeService.listTypeTop(50);
         if (id == -1) {
             id = types.get(0).getId();
         }
