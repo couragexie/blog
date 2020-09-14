@@ -10,7 +10,9 @@ import com.jay.blog.cache.RedisHandler;
 import com.jay.blog.utils.StringUtils;
 import io.netty.util.internal.StringUtil;
 import org.apache.catalina.LifecycleState;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
@@ -69,21 +71,21 @@ public class RedisAspect {
                 }
             }
         }else{
+            // 缓存中存在该数据
             result = deSerialize(method,cache);
         }
 
-        // 缓存中存在该数据
         return result;
     }
 
-    @Around(value = "removeCache()")
-    public void remove(ProceedingJoinPoint proceedingJoinPoint){
+    @After(value = "removeCache()")
+    public void remove(JoinPoint joinPoint){
         logger.info("======拦截 removeCache方法:{}.{} ======" ,
-                proceedingJoinPoint.getTarget().getClass().getName(), proceedingJoinPoint.getSignature().getName());
-        MethodSignature methodSignature = (MethodSignature) proceedingJoinPoint.getSignature();
+                 joinPoint.getSignature().getName());
+        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         RedisCacheRemove annotation = method.getAnnotation(RedisCacheRemove.class);
-        String key = parseKey(method, proceedingJoinPoint.getArgs(), annotation.key(),annotation.cacheName());
+        String key = parseKey(method, joinPoint.getArgs(), annotation.key(),annotation.cacheName());
         redisHandler.removeCache(key);
     }
 
@@ -92,6 +94,7 @@ public class RedisAspect {
         if (StringUtils.checkIsEmpty(keySEL)){
             return cacheName + "::" + "-1";
         }
+        logger.info("keySEL : " + keySEL);
         // 创建解析器
         ExpressionParser expressionParser = new SpelExpressionParser();
         Expression expression = expressionParser.parseExpression(keySEL);
@@ -101,7 +104,7 @@ public class RedisAspect {
         String[] parameterNames = discoverer.getParameterNames(method);
         for (int i = 0; i < args.length; i ++){
             context.setVariable(parameterNames[i],args[i]);
-            //System.out.println("parameterName : " + i + " = " + parameterNames[i]+ ",value=" + args[i]);
+            System.out.println("parameterName : " + i + " = " + parameterNames[i]+ ",value=" + args[i]);
         }
         // 返回解析的内容
         return cacheName+"::" + expression.getValue(context).toString();
@@ -121,7 +124,7 @@ public class RedisAspect {
             Type[] acturalTypesArgs = type.getActualTypeArguments();
             for ( Type acturalTypesArg : acturalTypesArgs){
                 Class classArg = (Class) acturalTypesArg;
-                logger.info("===== 获取到泛型:{} ======", classArg.getName());
+                //logger.info("===== 获取到泛型:{} ======", classArg.getName());
                 result = JSON.parseArray(cache, classArg);
             }
         }else{

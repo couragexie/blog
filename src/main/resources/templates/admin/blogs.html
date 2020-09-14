@@ -81,6 +81,13 @@
           </div>
         </div>
       </div>
+
+      <div class="ui success message" th:if="${param.message != null}">
+        <i class="close icon"></i>
+        <div class="header">提示：</div>
+        <p th:text="${param.message}">恭喜，操作成功！</p>
+      </div>
+
       <div id="table-container">
         <table th:fragment="blogList" class="ui compact teal table">
           <thead>
@@ -97,7 +104,7 @@
           <tbody>
           <tr th:each="blog,iterStat : ${page.records}" th:with="count=(${iterStat.count} + (${(page.current)}-1) * ${page.size})">
             <td th:text="${count}">1</td>
-            <td th:text="${blog.title}">刻意练习清单</td>
+            <td class="m-singleLine-overflow" th:text="${blog.title}">刻意练习清单</td>
             <td th:text="${blog.type.name}">认知升级</td>
             <td th:text="${blog.recommend} ? '是':'否'">是</td>
             <td th:text="${blog.published} ? '发布':'草稿'">草稿</td>
@@ -121,11 +128,6 @@
           </tfoot>
         </table>
 
-        <div class="ui success message" th:if="${param.message != null}">
-          <i class="close icon"></i>
-          <div class="header">提示：</div>
-          <p th:text="${param.message}">恭喜，操作成功！</p>
-        </div>
 
       </div>
 

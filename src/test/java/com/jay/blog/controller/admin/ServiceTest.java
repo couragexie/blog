@@ -42,12 +42,12 @@ public class ServiceTest {
 
     @Test
     public void test02() throws NotFoundException {
-        //blogService.getAndConvertById(2l);
+        blogService.getAndConvertById(35l);
         //redisHandler.removeCache();
        // testService.remove(123l);
         //blogService.getAndConvertById(2l);
-        List<Type> types = typeService.listType();
-        System.out.println(types.get(0).getClass());
+       // List<Type> types = typeService.listType();
+        //System.out.println(types.get(0).getClass());
         //String json = "[{\"id\":1,\"name\":\"数据结构\"},{\"id\":2,\"name\":\"Java\"},{\"id\":3,\"name\":\"操作系统\"},{\"id\":4,\"name\":\"数据库\"},{\"id\":5,\"name\":\"计算机网络\"},{\"id\":6,\"name\":\"Spring\"},{\"id\":7,\"name\":\"C++\"},{\"id\":8,\"name\":\"Linux\"},{\"id\":16,\"name\":\"剑指offer\"},{\"id\":17,\"name\":\"LeetCode\"},{\"id\":18,\"name\":\"JavaWeb\"}]";
         //JSON.parseArray(json,Type.class);
 

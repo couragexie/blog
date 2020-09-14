@@ -10,6 +10,11 @@ body {
     background-size:cover !important;
     background-position:center center !important
 }
+.m-singleLine-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .m-navigation-icon{
     margin-right: 6px !important;

@@ -76,7 +76,6 @@ public class BlogServiceImp implements BlogService {
         page = blogDao.selectPage(page, new QueryWrapper<Blog>().eq("type_id", typeId));
         Page<BlogVO> resultPage = new Page<>();
         BeanUtils.copyProperties(page, resultPage);
-
         resultPage.setRecords(page.getRecords().stream()
                 .map(e->BlogAndBlogVOConverter.blogToBlogVo(e))
                 .collect(Collectors.toList()));
@@ -157,7 +156,7 @@ public class BlogServiceImp implements BlogService {
 
     /* 根据标签获取 id， 按照更新时间排序*/
     @Override
-    @RedisCache(cacheNames = "blog&tagId", key = "#{tagId}" ,expire = 60*60)
+    @RedisCache(cacheNames = "blog&tagId", key = "#tagId" ,expire = 60*60)
     public List<Blog> listBlog(Long tagId) {
         return blogDao.selectList(new QueryWrapper<Blog>()
                                         .eq("tag_id", tagId)
@@ -223,7 +222,7 @@ public class BlogServiceImp implements BlogService {
     }
 
     @Override
-    @RedisCacheRemove(cacheName = "blog", key = "#{blogVO.getId()}")
+    @RedisCacheRemove(cacheName = "blog", key = "#blogVO.getId()")
     @Transactional
     public int updateOne(BlogVO blogVO) throws NotFoundException {
         Blog blog = blogDao.selectById(blogVO.getId());
@@ -250,11 +249,13 @@ public class BlogServiceImp implements BlogService {
     }
 
     @Override
-    @RedisCacheRemove(cacheName = "blog", key = "#{id}")
+    @RedisCacheRemove(cacheName = "blog", key = "#id")
     @Transactional
     public int deleteOne(Long id) {
         int ok = blogDao.deleteById(id);
         blogAndTagDao.delete(new QueryWrapper<BlogAndTag>().eq("blog_id", id));
         return ok;
     }
+
+
 }
