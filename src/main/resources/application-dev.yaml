@@ -28,10 +28,7 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
     connectionInitSqls: ["set names utf8mb4;"]  # 解决数据库设置编码utf8mb4格式
-logging:
-  level:
-    root: info
-    com.jay.blog:
+
 
 
 

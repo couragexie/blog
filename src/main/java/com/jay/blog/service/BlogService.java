@@ -25,13 +25,13 @@ public interface BlogService {
     public Page<BlogVO> listBlog(Page<Blog> page, BlogQuery blogQuery);
 
     /* 根据搜索模糊查询来获取*/
-    public Page<BlogVO> listBlog(String query, Page<Blog> page);
+    public Page<BlogVO> searchListBlog(String query, int pageNo);
 
     /* 根据 id 获取*/
-    public Blog getOneById(Long id);
+    public BlogVO getOneById(Long blogIsd);
 
     /* 根据id来获取， 并将 md 格式转为 html 格式*/
-    public BlogVO getAndConvertById(Long id) throws NotFoundException;
+   // public BlogVO getAndConvertById(Long id) throws NotFoundException;
 
     /*根据标签来获取*/
     public List<Blog> listBlog(Long tagId);
@@ -55,6 +55,6 @@ public interface BlogService {
     /* 更新*/
     public int updateOne(BlogVO blog) throws NotFoundException;
 
-    public int deleteOne(Long id);
+    public int deleteOne(Long blogId);
 
 }

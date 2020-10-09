@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title th:replace="${title}">博客详情</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-  <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+<!--  <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">-->
+  <link rel="stylesheet" href="../static/lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}">
+  <link rel="stylesheet" href="../static/lib/editormd/css/editormd.preview.css" th:href="@{/lib/editormd/css/editormd.preview.css}">
   <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
   <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
   <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
@@ -23,7 +25,7 @@
       <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini idea icon m-navigation-icon "></i>分类</a>
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide " th:classappend="${n==3} ? 'active'"><i class="mini tags icon m-navigation-icon"></i>标签</a>
       <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide " th:classappend="${n==4} ? 'active'"><i class="mini clone icon m-navigation-icon"></i>时间线</a>
-<!--      <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="mini info icon m-navigation-icon"></i>关于我</a>-->
+      <a href="https://github.com/couragexie" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="mini info icon m-navigation-icon"></i>Github</a>
       <div class="right m-item item m-mobile-hide">
         <form name="search" action="#" th:action="@{/search}" method="get" target="_blank">
           <div class="ui icon inverted transparent input m-margin-tb-tiny">

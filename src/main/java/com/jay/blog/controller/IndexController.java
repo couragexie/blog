@@ -9,6 +9,8 @@ import com.jay.blog.service.Imp.BlogServiceImp;
 import com.jay.blog.service.Imp.TagServiceImp;
 import com.jay.blog.service.Imp.TypeServiceImp;
 import com.jay.blog.service.Imp.UserServiceImp;
+import com.jay.blog.utils.CollectionsUtil;
+import com.jay.blog.utils.PageUtil;
 import com.jay.blog.vo.BlogVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.javassist.NotFoundException;
@@ -42,7 +44,7 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(@RequestParam(defaultValue = "1") Integer pageNo, ModelMap model){
+    public String index(@RequestParam(defaultValue = "1") Integer pageNo, ModelMap model) {
         Page<Blog> page = new Page<>();
         page.setSize(6);
         page.setCurrent(pageNo);
@@ -51,6 +53,7 @@ public class IndexController {
         orderItems.add(new OrderItem().setColumn("create_time").setAsc(false));
 
         Page<BlogVO> result = blogService.listBlog(page);
+
         // TODO 优化
         // 设置user
         setUser(result.getRecords());
@@ -61,16 +64,18 @@ public class IndexController {
         model.addAttribute("tags", tagService.listTagTop(10));
         model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
 
-        log.info("【访问主页】pageTotal={}, pages={}",result.getTotal(), result.getPages());
+        log.info("【访问主页】pageTotal={}, pages={}", result.getTotal(), result.getPages());
         return "index";
     }
 
-    private void setBlogVOTypeName(List<BlogVO> blogVOS){
+    private void setBlogVOTypeName(List<BlogVO> blogVOS) {
+        if (CollectionsUtil.checkListIsNull(blogVOS))
+            return;
         List<Type> types = typeService.listType();
         // 获取所有的分类信息
-        for (BlogVO blogVO : blogVOS ) {
-            for (Type type : types){
-                if( blogVO.getType().getId() == type.getId() ){
+        for (BlogVO blogVO : blogVOS) {
+            for (Type type : types) {
+                if (blogVO.getType().getId() == type.getId()) {
                     blogVO.getType().setName(type.getName());
                     break;
                 }
@@ -78,13 +83,15 @@ public class IndexController {
         }
     }
 
-    private void setUser(List<BlogVO> blogVOS){
+    // TODO：单用户情况下可以这样，多用户情况下就会出现问题
+    private void setUser(List<BlogVO> blogVOS) {
+        if (CollectionsUtil.checkListIsNull(blogVOS))
+            return ;
         User user = userService.getOneById(blogVOS.get(0).getUser().getId());
         user.setPassword(null);
         for (BlogVO blogVO : blogVOS)
             blogVO.setUser(user);
     }
-
 
     @GetMapping("/footer/newblog")
     public String newblogs(ModelMap model) {
@@ -95,7 +102,7 @@ public class IndexController {
 
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable Long id, ModelMap model) throws NotFoundException {
-        BlogVO blogVO = blogService.getAndConvertById(id);
+        BlogVO blogVO = blogService.getBlogVObyIdToView(id);
         User user = userService.getOneById(blogVO.getUser().getId());
         user.setPassword(null);
         blogVO.setUser(user);
@@ -107,21 +114,21 @@ public class IndexController {
     @GetMapping("/search")
     public String search(@RequestParam(defaultValue = "1") Integer pageNo,
                          @RequestParam String query, Model model) {
-        // 构建 page 查询
-        Page<Blog> page = new Page<>();
-        page.setCurrent(pageNo);
-        List<OrderItem> orderItems = new ArrayList<>();
-        orderItems.add(new OrderItem().setColumn("update_time").setAsc(false));
-        // 获取到结果
-        Page<BlogVO> resultPage = blogService.listBlog(query, page);
 
-        if (page.getRecords() != null && page.getRecords().size()>0) {
+        // 获取到结果
+        Page<BlogVO> resultPage = blogService.searchListBlog(query, pageNo);
+
+        if (resultPage != null) {
             // 设置 user；
             setUser(resultPage.getRecords());
             List<Type> types = typeService.listType();
             // 设置 result 中 record 中所有 blogVO 的 type。
             setBlogVOTypeName(resultPage.getRecords());
+        }else{
+            resultPage = PageUtil.generatePage(pageNo);
         }
+
+        System.out.println("resultPage1" + resultPage);
         model.addAttribute("page", resultPage);
         model.addAttribute("query", query);
 

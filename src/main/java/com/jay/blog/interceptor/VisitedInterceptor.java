@@ -34,7 +34,10 @@ public class VisitedInterceptor implements HandlerInterceptor {
             parameters.append(",");
         }
         String url = request.getRequestURL().toString();
-        logger.info("ip:{}, url:{}, parameters:{}", ip,url, parameters.toString());
+        String parameterStr = parameters.toString();
+        if (parameterStr.length() > 50)
+            parameterStr = parameterStr.substring(50);
+        logger.info("ip:{}, url:{}, parameters:{}", ip,url, parameterStr);
 
         return true;
     }

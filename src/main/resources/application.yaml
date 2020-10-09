@@ -17,8 +17,14 @@ mybatis-plus:
 
 comment.avatar: /images/avatar.png
 
----
+logging:
+  path: ./logs
+  level:
+    com:
+      jay:
+        blog: INFO
 
+---
 # redis configuration
 spring:
   redis:

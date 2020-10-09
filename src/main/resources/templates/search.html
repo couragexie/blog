@@ -58,7 +58,7 @@
             </div>
         </div>
         <!-- 查询结果大于 0 的情况       -->
-        <div class="ui top attached teal segment" th:if="${page.total} > 0">
+        <div class="ui top attached teal segment" th:if="${page.total} > 0 ">
             <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.records}">
                 <div class="ui middle aligned mobile reversed stackable grid">
                     <div class="eleven wide column">

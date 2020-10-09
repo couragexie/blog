@@ -22,16 +22,16 @@ class TypeControllerTest {
 
     @Test
     void types() {
-        Integer pageNo = 2;
-        Page<Type> page = new Page<>();
-        ArrayList<OrderItem> orders = new ArrayList<>();
-        orders.add(new OrderItem().setColumn("id"));
-        page.setOrders(orders);
-        page.setCurrent(pageNo);
-        Page<Type> type = service.listType(page);
-
-        List<Type> types = type.getRecords();
-
-        types.forEach(System.out::println);
+//        Integer pageNo = 2;
+//        Page<Type> page = new Page<>();
+//        ArrayList<OrderItem> orders = new ArrayList<>();
+//        orders.add(new OrderItem().setColumn("id"));
+//        page.setOrders(orders);
+//        page.setCurrent(pageNo);
+//        Page<Type> type = service.listType(page);
+//
+//        List<Type> types = type.getRecords();
+//
+//        types.forEach(System.out::println);
     }
 }

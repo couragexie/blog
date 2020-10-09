@@ -18,7 +18,7 @@ public interface TypeService {
 
     public Type getOneByName(String name);
 
-    public Type getOneById(Long id);
+    public Type getOneById(Long typeId);
 
     public int delete(Long id);
 

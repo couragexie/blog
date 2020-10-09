@@ -6,6 +6,7 @@
   <title>博客发布</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
   <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+  <link rel="stylesheet" href="../../static/lib/editormd/lib/marked.min.js">
   <link rel="stylesheet" href="../../static/css/me.css">
 </head>
 <body>
@@ -69,7 +70,8 @@
 
         <div class="required field">
           <div id="md-content" style="z-index: 1 !important;">
-            <textarea placeholder="博客内容" name="content" style="display: none" th:text="*{content}"></textarea>
+            <textarea placeholder="博客内容" name="contentMd" style="display: none" th:text="*{contentMd}"></textarea>
+            <input id="html-content" type="hidden" name="contentHtml">
           </div>
         </div>
 
@@ -144,6 +146,7 @@
 
         <div class="ui right aligned container">
           <button type="button" class="ui button" onclick="window.history.go(-1)" >返回</button>
+          <button type="button" class="ui button" id="preview-btn">预览</button>
           <button type="button" id="save-btn" class="ui secondary button">保存</button>
           <button type="button" id="publish-btn" class="ui teal button">发布</button>
         </div>
@@ -201,10 +204,26 @@
         width   : "100%",
         height  : 640,
         syncScrolling : "single",
-//        path    : "../static/lib/editormd/lib/"
-        path    : "/lib/editormd/lib/"
+        codeFold:true,
+        searchReplace:true,
+        path    : "/lib/editormd/lib/",
+
+        saveHTMLToTextarea: true, // 保存 md转html 的文本，下面 getHTML() 才能获得
+        htmlDecode      : "style,script,iframe",  // you can filter tags decode
+        emoji           : true,
+        taskList        : true,
+        tex             : true,  // 默认不解析
+        flowChart       : true,  // 默认不解析
+        sequenceDiagram : true,  // 默认不解析
       });
+
+      $("#preview-btn").bind('click', function() {
+        contentEditor.previewing();
+      });
+
+
     });
+
     $('.menu.toggle').click(function () {
       $('.m-item').toggleClass('m-mobile-hide');
     });
@@ -215,11 +234,15 @@
 
     $('#save-btn').click(function () {
       $('[name="published"]').val(false);
+      var html = contentEditor.getHTML();
+      $('#html-content').val(html);
       $('#blog-form').submit();
     });
 
 
     $('#publish-btn').click(function () {
+      var html = contentEditor.getHTML();
+      $('#html-content').val(html);
       $('[name="published"]').val(true);
       $('#blog-form').submit();
     });

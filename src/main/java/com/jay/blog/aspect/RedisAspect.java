@@ -94,6 +94,9 @@ public class RedisAspect {
         if (StringUtils.checkIsEmpty(keySEL)){
             return cacheName + "::" + "-1";
         }
+        if (keySEL.contains("*")){
+            return cacheName + "*";
+        }
         logger.info("keySEL : " + keySEL);
         // 创建解析器
         ExpressionParser expressionParser = new SpelExpressionParser();
@@ -104,7 +107,7 @@ public class RedisAspect {
         String[] parameterNames = discoverer.getParameterNames(method);
         for (int i = 0; i < args.length; i ++){
             context.setVariable(parameterNames[i],args[i]);
-            System.out.println("parameterName : " + i + " = " + parameterNames[i]+ ",value=" + args[i]);
+           // System.out.println("parameterName : " + i + " = " + parameterNames[i]+ ",value=" + args[i]);
         }
         // 返回解析的内容
         return cacheName+"::" + expression.getValue(context).toString();

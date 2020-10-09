@@ -1,6 +1,7 @@
 package com.jay.blog.converter;
 
 import com.jay.blog.entity.Tag;
+import com.jay.blog.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,8 +31,9 @@ public class TagConverter {
     }
 
     public static List<Long> StringTagIdsToListTag(String tagIds){
-        if(tagIds == null)
-            return null;
+        // tagIds 为空是，返回一个空 List，防止后续遍历失败
+        if(StringUtils.checkIsEmpty(tagIds))
+            return new ArrayList<>();
 
         String[] arrayTagIds = tagIds.split(",");
         List<Long> ids = new ArrayList<>();

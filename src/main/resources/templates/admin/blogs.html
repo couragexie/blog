@@ -91,26 +91,27 @@
       <div id="table-container">
         <table th:fragment="blogList" class="ui compact teal table">
           <thead>
-          <tr>
+          <tr class="center aligned">
             <th></th>
-            <th>标题</th>
-            <th>类型</th>
-            <th>推荐</th>
-            <th>状态</th>
+            <th class="five wide">标题</th>
+            <th >类型</th>
+            <th >推荐</th>
+            <th >状态</th>
             <th>更新时间</th>
-            <th>操作</th>
+            <th class="four wide" >操作</th>
           </tr>
           </thead>
           <tbody>
           <tr th:each="blog,iterStat : ${page.records}" th:with="count=(${iterStat.count} + (${(page.current)}-1) * ${page.size})">
             <td th:text="${count}">1</td>
-            <td class="m-singleLine-overflow" th:text="${blog.title}">刻意练习清单</td>
+            <td class="" th:text="${blog.title}">MySql报Incorrect string Incorrect string value Incorrect string value 乱码解决方法</td>
             <td th:text="${blog.type.name}">认知升级</td>
             <td th:text="${blog.recommend} ? '是':'否'">是</td>
             <td th:text="${blog.published} ? '发布':'草稿'">草稿</td>
-            <td th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd HH:mm:ss')}">2017-10-02 09:45</td>
+            <td th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}">2017-10-02</td>
             <td>
               <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+              <a href="#" th:href="@{/admin/blogs/preview/{id}(id=${blog.id})}" class="ui mini blue basic button">预览</a>
               <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
             </td>
           </tr>

@@ -16,7 +16,6 @@ import java.util.List;
  * @create: 2020-04-04 17:22
  **/
 @Data
-
 public class BlogVO implements Serializable{
 
     private Long id;
@@ -24,8 +23,10 @@ public class BlogVO implements Serializable{
     /*标题*/
     @NotBlank(message = "标题不能为空")
     private String title;
-    /*内容*/
-    private String content;
+    /* Makedown 格式的内容*/
+    private String contentMd;
+    /* Html 格式的内容 */
+    private String contentHtml;
     /*首图*/
     private String firstPicture;
     /*介绍描述*/

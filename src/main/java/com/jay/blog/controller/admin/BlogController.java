@@ -2,11 +2,12 @@ package com.jay.blog.controller.admin;
 
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jay.blog.converter.BlogAndBlogVOConverter;
+import com.jay.blog.converter.BlogVOConverter;
 import com.jay.blog.entity.*;
 import com.jay.blog.service.Imp.BlogServiceImp;
 import com.jay.blog.service.Imp.TagServiceImp;
 import com.jay.blog.service.Imp.TypeServiceImp;
+import com.jay.blog.service.Imp.UserServiceImp;
 import com.jay.blog.vo.BlogQuery;
 import com.jay.blog.vo.BlogVO;
 import lombok.extern.slf4j.Slf4j;
@@ -18,16 +19,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.management.Query;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.net.HttpCookie;
-import java.security.PrivateKey;
-import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @program: blog
@@ -47,6 +42,9 @@ public class BlogController {
 
     @Autowired
     private BlogServiceImp blogService;
+
+    @Autowired
+    private UserServiceImp userService;
 
     @Autowired
     private TypeServiceImp typeService;
@@ -141,23 +139,26 @@ public class BlogController {
         model.addAttribute("tags", tagService.listTag());
     }
 
+    // TODO 测试
     @GetMapping("/{id}/input")
     public String edit(@PathVariable Long id, ModelMap model){
         setTypesAndTags(model);
-        BlogVO blogVO = BlogAndBlogVOConverter.blogToBlogVo(blogService.getOneById(id));
+        BlogVO blogVO = blogService.getOneById(id);
         // 获取博客的 tag。
         blogVO.setTagIds(tagService.getTagIds(blogVO.getId()));
+        Type type = typeService.getOneById(blogVO.getType().getId());
+        blogVO.setType(type);
         model.addAttribute("blog", blogVO);
         return INPUT;
     }
 
-    /*新增*/
+    /*新增和更新*/
     @PostMapping()
     public String post(@Valid BlogVO blogVO,
                        BindingResult result,
                        RedirectAttributes attributes, HttpSession session) throws NotFoundException {
         blogVO.setUser(new User( ((User)session.getAttribute("user")).getId() ) );
-
+        //System.out.println(blogVO);
         int ok = -1;
         if (blogVO.getId() == null)
             ok = blogService.saveOne(blogVO);
@@ -184,4 +185,15 @@ public class BlogController {
         return REDIRECT_LIST;
     }
 
+    @RequestMapping("/preview/{id}")
+    public String previewBlog(@PathVariable Long id, ModelMap model) throws NotFoundException {
+        System.out.println(id);
+        BlogVO blogVO = blogService.getBlogVObyIdToView(id);
+        User user = userService.getOneById(blogVO.getUser().getId());
+        user.setPassword(null);
+        blogVO.setUser(user);
+        blogVO.setTags(tagService.listTag(blogVO.getId()));
+        model.addAttribute("blog", blogVO);
+        return "blog";
+    }
 }

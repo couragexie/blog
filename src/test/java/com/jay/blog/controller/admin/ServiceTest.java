@@ -40,9 +40,10 @@ public class ServiceTest {
     @Autowired
     RedisHandler redisHandler;
 
+
     @Test
     public void test02() throws NotFoundException {
-        blogService.getAndConvertById(35l);
+        //blogService.getAndConvertById(35l);
         //redisHandler.removeCache();
        // testService.remove(123l);
         //blogService.getAndConvertById(2l);

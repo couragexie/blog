@@ -55,8 +55,8 @@ public class TypeServiceImp implements TypeService {
     }
 
     @Override
-    public Type getOneById(Long id) {
-        return typeDao.selectById(id);
+    public Type getOneById(Long typeId) {
+        return typeDao.selectById(typeId);
     }
 
     @Override

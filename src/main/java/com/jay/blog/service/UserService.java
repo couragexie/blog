@@ -11,7 +11,7 @@ import com.jay.blog.entity.User;
 
 public interface UserService {
 
-    public User checkUser(String username, String password);
+    public User checkUser(User user);
 
     public User getOneById(Long id);
 }

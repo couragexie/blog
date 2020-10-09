@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.sql.Time;
@@ -44,16 +45,20 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public String login(@RequestParam String username,
-                        @RequestParam String password,
-                        HttpSession session,
+    public String login(User loginUser,
+                        HttpServletRequest request,
                         RedirectAttributes attributes,
                         HttpServletResponse response
     ){
-        User user = userService.checkUser(username, MD5Utils.code(password));
+        if ( !checkIsNotNull(loginUser)){
+            return logPage();
+        }
+
+        User user = userService.checkUser(loginUser);
         logger.info("获取到 User ：" + user);
         if(user != null){
             user.setPassword(null);
+            HttpSession session = request.getSession();
             session.setAttribute("user", user);
             return "admin/index";
         }else{
@@ -62,11 +67,16 @@ public class LoginController {
         }
     }
 
+    public boolean checkIsNotNull(User user){
+        if (user.getUsername() != null && user.getPassword() != null)
+            return true;
+        return false;
+    }
 
     @GetMapping("/logout")
-    public String logout(HttpSession session){
-        session.removeAttribute("user");
-
+    public String logout(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        session.invalidate();
         return "redirect:/admin";
     }
 

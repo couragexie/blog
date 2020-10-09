@@ -20,7 +20,7 @@ public interface TagDao extends BaseMapper<Tag> {
             @Result(property = "name", column = "name"),
             @Result(property = "blogNum", column="blogNum")
     })
-    @Select("select tag.id id, tag.name name, count(bt.blog_id) blogNum from b_tag tag left join b_blog_tag bt on tag.id = bt.tag_id group by tag.id having count(bt.blog_id)>0 order by count(bt.blog_id) desc limit #{size}")
+    @Select("select tag.id id, tag.name name, count(bt.blog_id) blogNum from b_tag as tag left join b_blog_tag as bt on tag.id = bt.tag_id group by tag.id having count(bt.blog_id)>0 order by count(bt.blog_id) desc limit #{size}")
     public List<TagVO> listTagIdTop(Integer size);
 
     @Select(" select * from b_tag as t where id in(select bt.tag_id from b_blog_tag as bt where bt.blog_id = #{blog_id})")

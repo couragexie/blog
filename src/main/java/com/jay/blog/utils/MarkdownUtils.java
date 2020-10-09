@@ -81,8 +81,14 @@ public class MarkdownUtils {
                 "| 斯维尔多  | 士大夫  | f啊    |\n" +
                 "| 阿什顿发  | 非固定杆 | 撒阿什顿发 |\n" +
                 "\n";
+        String table2 = "| a(i) | b(i) | 无进位和 n(i) | 进位c(i+1) |\n" +
+                "| ---- | ---- | ------------- | ---------- |\n" +
+                "|  00  | 00   | 00            | 00         |\n" +
+                "|  11  | 00   | 11            | 00         |\n" +
+                "|  00  | 11   | 11            | 00         |\n" +
+                "|  11  | 11   | 00            | 11         |";
         String a = "[imCoding 爱编程](http://www.lirenmi.cn)";
         System.out.println(markdownToHtmlExtensions(a));
-        System.out.println(markdownToHtmlExtensions(table));
+        System.out.println(markdownToHtmlExtensions(table2));
     }
 }

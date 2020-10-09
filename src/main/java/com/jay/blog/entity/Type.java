@@ -29,4 +29,8 @@ public class Type implements Serializable {
 
     @NotBlank(message = "分类名称不能为空")
     private String name;
+
+    public Type(long typeId){
+        this.id = typeId;
+    }
 }
