@@ -35,6 +35,6 @@ spring:
 
   rabbitmq:
     username: root
-    password: xieJIE123...
+    password: xxx
     host: 120.78.158.142
     port: 5672
