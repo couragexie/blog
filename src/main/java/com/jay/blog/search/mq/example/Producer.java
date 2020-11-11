@@ -1,5 +1,7 @@
 package com.jay.blog.search.mq.example;
 
+import com.jay.blog.config.RabbitmqConfig;
+import com.jay.blog.search.mq.MqEsIndexMessage;
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -12,8 +14,8 @@ import java.util.concurrent.TimeoutException;
  * @Author: xiejie
  * @Date: 2020/11/10 15:51
  */
-public class Publisher {
-    public static void main(String[] args) throws IOException, TimeoutException {
+public class Producer {
+    public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
         // 创建连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setUsername("root");
@@ -24,14 +26,22 @@ public class Publisher {
         // 创建 channel
         Channel channel = connection.createChannel();
 
-        String exchangeName = "es-exchange";
+//        String exchangeName = "es-exchange";
+        String exchangeName = RabbitmqConfig.EXCHANGE_NAME;
         // 声明交换器
         channel.exchangeDeclare(exchangeName,"direct", true);
 
-        String routingKey = "blog";
-        byte[] message = "this is a new blog".getBytes();
+//        String routingKey = "es-blog";
+        String routingKey = RabbitmqConfig.ROUTING_KEY;
+
+        MqEsIndexMessage message1 = new MqEsIndexMessage(10L, MqEsIndexMessage.CREATE_OR_UPDATE);
+
         // producer 绑定交换器
-        channel.basicPublish(exchangeName, routingKey, null, message);
+        for (int i = 0; i < 100; i ++) {
+            byte[] message = new String("this is a new blog" + i).getBytes();
+            channel.basicPublish(exchangeName, routingKey, null, message);
+            //Thread.sleep(1000);
+        }
 
         channel.close();
         connection.close();

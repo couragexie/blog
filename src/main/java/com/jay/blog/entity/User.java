@@ -24,7 +24,8 @@ import java.util.Date;
 @Component
 @TableName("b_user")
 public class User implements Serializable {
-    @TableId(value = "id",type = IdType.AUTO)    private Long id;
+    @TableId(value = "id",type = IdType.AUTO)
+    private Long id;
     private String nickname;
     private String username;
     private String password;

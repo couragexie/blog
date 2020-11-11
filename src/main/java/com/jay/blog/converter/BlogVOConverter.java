@@ -4,6 +4,7 @@ import com.jay.blog.entity.Blog;
 import com.jay.blog.entity.BlogContent;
 import com.jay.blog.entity.Type;
 import com.jay.blog.entity.User;
+import com.jay.blog.search.model.BlogDocument;
 import com.jay.blog.vo.BlogVO;
 import org.apache.logging.log4j.spi.AbstractLogger;
 import org.springframework.beans.BeanUtils;
@@ -78,6 +79,19 @@ public class BlogVOConverter {
         blogContent.setContentMd(blogVO.getContentMd());
         blogContent.setTitle(blogVO.getTitle());
         return blogContent;
+    }
+
+    public static BlogDocument blogVOToBlogDocument(BlogVO blogVO){
+        BlogDocument blogDocument = new BlogDocument();
+        BeanUtils.copyProperties(blogVO, blogDocument);
+        return blogDocument;
+    }
+
+    public static BlogVO blogDocumentToBlogVO(BlogDocument blogDocument){
+        BlogVO blogVO = new BlogVO();
+        BeanUtils.copyProperties(blogDocument, blogVO);
+        blogVO.setContentMd(null);
+        return blogVO;
     }
 
 }

@@ -61,4 +61,29 @@ public class BlogVO implements Serializable{
 
     private List<Comment> comments = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "BlogVO{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", contentMd='" + contentMd.substring(0,50) + '\'' +
+                ", contentHtml='" + contentHtml + '\'' +
+                ", firstPicture='" + firstPicture + '\'' +
+                ", description='" + description + '\'' +
+                ", flag='" + flag + '\'' +
+                ", views=" + views +
+                ", appreciation=" + appreciation +
+                ", copyright=" + copyright +
+                ", commentabled=" + commentabled +
+                ", published=" + published +
+                ", recommend=" + recommend +
+                ", type=" + type +
+                ", user=" + user +
+                ", tagIds='" + tagIds + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", tags=" + tags +
+                ", comments=" + comments +
+                '}';
+    }
 }

@@ -13,11 +13,9 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitmqConfig {
     public final static  String EXCHANGE_NAME = "es-exchange";
     public final static  String QUEUE_NAME = "es-queue";
-    public final static  String ROUTING_KEY = "es-exchange";
+    public final static  String ROUTING_KEY = "es-blog";
 
-    // 消息类型
-    public final static String CREATE_OR_UPDATE = "create_or_update";
-    public final static String REMOVE = "remove";
+
 
 
     @Bean

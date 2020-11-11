@@ -82,6 +82,7 @@ public class BlogServiceImp implements BlogService {
     // TODO 测试
     /* 根据typeId 获取博客*/
     //@RedisCache(cacheNames = "blog&type", key = "#typeId", expire = 1, unit = TimeUnit.HOURS)
+    @Override
     public Page<BlogVO> listBlogByTypeId(Long typeId, Page<Blog> page){
         page = blogDao.selectPage(page, new QueryWrapper<Blog>().eq("type_id", typeId));
         Page<BlogVO> resultPage = PageUtil.copyPage(page);
@@ -154,13 +155,10 @@ public class BlogServiceImp implements BlogService {
     @Override
     public BlogVO getOneById(Long blogId){
         Blog blog =  blogDao.selectById(blogId);
-        String blogContentMd = blogContentDao.selectContentMd(blogId);
-        BlogVO blogVO = new BlogVO();
-        BeanUtils.copyProperties(blog, blogVO);
-        blogVO.setContentMd(blogContentMd);
-        Type type = new Type();
-        type.setId(blog.getTypeId());
-        blogVO.setType(type);
+        //String blogContentMd = blogContentDao.selectContentMd(blogId);
+        BlogContent blogContent = blogContentDao.selectOneByBlogId(blogId);
+        blogContent.setContentHtml(null);
+        BlogVO blogVO = BlogVOConverter.blogToBlogVo(blog, blogContent);
         return blogVO;
     }
 

@@ -7,8 +7,20 @@ import java.io.Serializable;
  * @Date: 2020/11/10 17:33
  */
 public class MqEsIndexMessage implements Serializable {
+    // 消息类型
+    public final static String CREATE_OR_UPDATE = "create_or_update";
+    public final static String REMOVE = "remove";
+
     private long postId;
     private String type;
+
+    public MqEsIndexMessage() {
+    }
+
+    public MqEsIndexMessage(long postId, String type) {
+        this.postId = postId;
+        this.type = type;
+    }
 
     public long getPostId() {
         return postId;

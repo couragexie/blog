@@ -1,0 +1,7 @@
+2020-11-11 10:35:57 [http-nio-8080-exec-1] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:35:58 [http-nio-8080-exec-8] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-11 10:36:00 [http-nio-8080-exec-7] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-11 10:43:47 [http-nio-8080-exec-1] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:43:49 [http-nio-8080-exec-4] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-11 10:47:35 [http-nio-8080-exec-4] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:47:37 [http-nio-8080-exec-7] INFO  msg: ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:

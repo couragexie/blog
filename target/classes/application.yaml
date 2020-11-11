@@ -31,10 +31,14 @@ spring:
     database: 0
     host: 120.78.158.142
     port: 6379
-    password:
+    password: xieJIE!!...
 
   rabbitmq:
     username: root
     password: xieJIE123...
     host: 120.78.158.142
-    port: 5672
+
+es:
+ port: 9200
+ hostname: 42.192.92.114
+
