@@ -67,7 +67,7 @@ public class BlogVO implements Serializable{
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", contentMd='" + contentMd.substring(0,50) + '\'' +
-                ", contentHtml='" + contentHtml + '\'' +
+                ", contentHtml='" + contentHtml.substring(0,50) + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", description='" + description + '\'' +
                 ", flag='" + flag + '\'' +

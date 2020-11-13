@@ -59,7 +59,7 @@
     </appender>
 
     <!--  记录同步日志  -->
-    <appender name="MQ-ES-APPENDER" class="ch.qos.logback.core.FileAppender">
+    <appender name="ES-APPENDER" class="ch.qos.logback.core.FileAppender">
         <!-- 追加写的方式       -->
         <append>true</append>
         <!--临界值过滤器，过滤掉日志级别低于当前日志掉级别掉日志       -->
@@ -67,7 +67,7 @@
             <level>${logging.level}</level>
         </filter>
         <!-- 指定写入的文件路径名       -->
-        <file>${logging.path}/mq-es-syn.log</file>
+        <file>${logging.path}/es-syn.log</file>
         <!-- 格式化输出       -->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
@@ -89,8 +89,8 @@
 <!--        <appender-ref ref="ERROR-APPENDER" />-->
     </logger>
 
-    <logger name="MQ-ES-SYN" level="${logging.level}" additivity="true">
-        <appender-ref ref="MQ-ES-APPENDER"></appender-ref>
+    <logger name="ES-SYN" level="${logging.level}" additivity="true">
+        <appender-ref ref="ES-APPENDER"></appender-ref>
     </logger>
 
 <!-- 根 logger 一种日志打印器，root 打印到输出台，包含项目的启动信息   -->

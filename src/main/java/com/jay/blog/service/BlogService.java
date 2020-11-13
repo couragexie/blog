@@ -12,6 +12,8 @@ import java.util.Map;
 
 public interface BlogService {
 
+    public List<Long> listBlogId();
+
     /*获取一页*/
     public Page<BlogVO> listBlog(Page<Blog> page);
 
@@ -28,7 +30,7 @@ public interface BlogService {
     public Page<BlogVO> searchListBlog(String query, int pageNo);
 
     /* 根据 id 获取*/
-    public BlogVO getOneById(Long blogIsd);
+    public BlogVO getBlogVOById(Long blogIsd);
 
     /* 根据id来获取， 并将 md 格式转为 html 格式*/
    // public BlogVO getAndConvertById(Long id) throws NotFoundException;

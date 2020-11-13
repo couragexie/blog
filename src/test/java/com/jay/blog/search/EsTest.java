@@ -1,10 +1,12 @@
 package com.jay.blog.search;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.jay.blog.converter.BlogVOConverter;
-import com.jay.blog.entity.Blog;
 import com.jay.blog.search.model.BlogDocument;
 import com.jay.blog.service.BlogService;
 import com.jay.blog.vo.BlogVO;
+import oracle.jrockit.jfr.StringConstantPool;
 import org.elasticsearch.common.Strings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
@@ -13,6 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: xiejie
@@ -29,21 +34,53 @@ public class EsTest {
     @Test
     public void createBlogMapping() throws IOException {
         String blogMapping = blogMapping();
+        //System.out.println(blogMapping);
         String index = "blog";
         esHandler.createIndexMapping(index, blogMapping);
+    }
+
+    @Test
+    public void putBlogMapping() throws IOException {
+        String blogMapping = blogMapping();
+        String index = "blog";
+        esHandler.putIndexMapping(index, blogMapping);
+    }
+
+    @Test
+    public void deleteIndex() throws IOException {
+        String index = "blog";
+        esHandler.deleteIndex(index);
+    }
+
+    @Test
+    public void createDoc() throws IOException {
+        Long blogId = 2L;
+        BlogVO blogVO = blogService.getBlogVOById(blogId);
+        //System.out.println(blogVO);
+        BlogDocument blogDocument = BlogVOConverter.blogVOToBlogDocument(blogVO);
+        String documentJson = JSONObject.toJSONString(blogDocument);
+//        System.out.println(blogDocument);
+        System.out.println(documentJson);
+        esHandler.createDoc("blog", blogId.toString() , documentJson);
+    }
+
+    @Test
+    public void bulkDoc() throws IOException {
+        List<Long> blogsId = blogService.listBlogId();
+        for (Long blogId : blogsId.subList(0, 10)){
+            BlogVO blogVO = blogService.getBlogVOById(blogId);
+            BlogDocument blogDocument = BlogVOConverter.blogVOToBlogDocument(blogVO);
+            String documentJson = JSONObject.toJSONString(blogDocument);
+            esHandler.createDoc("blog", blogId.toString(), documentJson);
+        }
 
     }
 
     @Test
-    public void createIndex(){
-        Long blogId = 2L;
-        BlogVO blogVO = blogService.getOneById(blogId);
-        System.out.println(blogVO);
-        BlogDocument blogDocument = BlogVOConverter.blogVOToBlogDocument(blogVO);
-        System.out.println(blogDocument);
+    public void fullSearch(){
+        List<String> searchFields = new ArrayList<>();
+
     }
-
-
 
     public static String blogMapping() throws IOException {
         XContentBuilder jsonBuilder = XContentFactory.jsonBuilder();
@@ -76,7 +113,7 @@ public class EsTest {
                 }
                 jsonBuilder.endObject();
                 // type
-                jsonBuilder.startObject("type");
+                jsonBuilder.startObject("blogType");
                 {
                     jsonBuilder.field("type", "object");
                     jsonBuilder.startObject("properties");
@@ -102,16 +139,19 @@ public class EsTest {
                 jsonBuilder.startObject("tags");
                 {
                     jsonBuilder.field("type", "object");
-                    jsonBuilder.startObject("name");
-                    {
-                        jsonBuilder.field("analyzer", "ik_max_word");
-                        jsonBuilder.field("search_analyzer", "ik_max_word");
-                    }
-                    jsonBuilder.endObject();
-                    jsonBuilder.startObject("id");
-                    {
-                        jsonBuilder.field("type", "long");
-                    }
+                    jsonBuilder.startObject("properties");
+                        jsonBuilder.startObject("name");
+                        {
+                            jsonBuilder.field("type", "text");
+                            jsonBuilder.field("analyzer", "ik_max_word");
+                            jsonBuilder.field("search_analyzer", "ik_max_word");
+                        }
+                        jsonBuilder.endObject();
+                        jsonBuilder.startObject("id");
+                        {
+                            jsonBuilder.field("type", "long");
+                        }
+                        jsonBuilder.endObject();
                     jsonBuilder.endObject();
                 }
                 jsonBuilder.endObject();
@@ -119,21 +159,49 @@ public class EsTest {
                 jsonBuilder.startObject("user");
                 {
                     jsonBuilder.field("type", "object");
-                    jsonBuilder.startObject("id");
+                    jsonBuilder.startObject("properties");
                     {
-                        jsonBuilder.field("type","long");
-                    }
-                    jsonBuilder.endObject();
+                        jsonBuilder.startObject("id");
+                        {
+                            jsonBuilder.field("type", "long");
+                        }
+                        jsonBuilder.endObject();
 
-                    jsonBuilder.startObject("nickname");
-                    {
-                        jsonBuilder.field("type","long");
-                    }
-                    jsonBuilder.endObject();
+                        jsonBuilder.startObject("nickname");
+                        {
+                            jsonBuilder.field("type", "text");
+                        }
+                        jsonBuilder.endObject();
 
-                    jsonBuilder.startObject("avatar");
-                    {
-                        jsonBuilder.field("type","string");
+                        jsonBuilder.startObject("username");
+                        {
+                            jsonBuilder.field("type", "text");
+                        }
+                        jsonBuilder.endObject();
+
+                        jsonBuilder.startObject("password");
+                        {
+                            jsonBuilder.field("type", "text");
+                        }
+                        jsonBuilder.endObject();
+
+                        jsonBuilder.startObject("email");
+                        {
+                            jsonBuilder.field("type", "text");
+                        }
+                        jsonBuilder.endObject();
+
+                        jsonBuilder.startObject("avatar");
+                        {
+                            jsonBuilder.field("type", "text");
+                        }
+                        jsonBuilder.endObject();
+
+                        jsonBuilder.startObject("type");
+                        {
+                            jsonBuilder.field("type", "integer");
+                        }
+                        jsonBuilder.endObject();
                     }
                     jsonBuilder.endObject();
                 }
@@ -141,7 +209,7 @@ public class EsTest {
 
                 jsonBuilder.startObject("firstPicture");
                 {
-                    jsonBuilder.field("type","string");
+                    jsonBuilder.field("type","text");
                 }
                 jsonBuilder.endObject();
 

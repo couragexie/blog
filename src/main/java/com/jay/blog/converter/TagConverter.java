@@ -16,14 +16,15 @@ import java.util.List;
 public class TagConverter {
     /* List  转成 String*/
     public static String listTagToStringTagIds(List<Long> tagIds){
-        if (tagIds == null)
+        if (tagIds == null) {
             return null;
-
+        }
         StringBuffer result = new StringBuffer();
         boolean flag = false;
         for (Long tagId: tagIds){
-            if (flag)
+            if (flag) {
                 result.append(",");
+            }
             flag = true;
             result.append(tagId);
         }
@@ -32,14 +33,14 @@ public class TagConverter {
 
     public static List<Long> StringTagIdsToListTag(String tagIds){
         // tagIds 为空是，返回一个空 List，防止后续遍历失败
-        if(StringUtils.checkIsEmpty(tagIds))
+        if(StringUtils.checkIsEmpty(tagIds)) {
             return new ArrayList<>();
-
+        }
         String[] arrayTagIds = tagIds.split(",");
         List<Long> ids = new ArrayList<>();
-        for (String tagId : arrayTagIds)
+        for (String tagId : arrayTagIds) {
             ids.add(Long.parseLong(tagId));
-
+        }
         return ids;
     }
 

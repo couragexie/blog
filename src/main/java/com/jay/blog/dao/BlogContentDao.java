@@ -22,6 +22,8 @@ public interface BlogContentDao extends BaseMapper<BlogContent> {
     @Select("SELECT * from b_blog_content where blog_id = #{blogId}")
     public BlogContent selectOneByBlogId(long blogId);
 
+
+
     /* 根据关键字搜索，返回指定的 blogContent 对象*/
     // 要点!! 分页返回的对象与传入的对象是同一个
     @Select("select * from b_blog_content where match(title,content_html) against(#{query})")

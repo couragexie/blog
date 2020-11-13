@@ -46,11 +46,11 @@ public class TagServiceImp implements TagService {
 
     @Override
     public List<Tag> listTag(Long blogId) {
-
         return tagDao.listTag(blogId);
     }
 
     /* 获取博客的所有标签id 并将其转成 String 类型*/
+    @Override
     public String getTagIds(Long blogId){
         // 获取 BlogAndTag 对象集合
         List<BlogAndTag> blogAndTag = blogAndTagDao.selectList(new QueryWrapper<BlogAndTag>()

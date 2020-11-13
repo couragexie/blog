@@ -33,7 +33,7 @@ public class BlogDocument {
     /*查看人数*/
     private Integer views;
 
-    private Type type;
+    private Type blogType;
 
     private User user;
     /* 博客和标签*/
@@ -51,7 +51,7 @@ public class BlogDocument {
                 ", description='" + description + '\'' +
                 ", contentMd='" + contentMd.substring(0,100) + '\'' +
                 ", views=" + views +
-                ", type=" + type +
+                ", type=" + blogType +
                 ", user=" + user +
                 ", tags=" + tags +
                 ", createTime=" + createTime +

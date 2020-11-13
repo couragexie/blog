@@ -8,13 +8,8 @@ import com.jay.blog.cache.RedisCache;
 import com.jay.blog.cache.RedisCacheRemove;
 import com.jay.blog.converter.BlogVOConverter;
 import com.jay.blog.converter.TagConverter;
-import com.jay.blog.dao.BlogAndTagDao;
-import com.jay.blog.dao.BlogContentDao;
-import com.jay.blog.dao.BlogDao;
-import com.jay.blog.entity.Blog;
-import com.jay.blog.entity.BlogAndTag;
-import com.jay.blog.entity.BlogContent;
-import com.jay.blog.entity.Type;
+import com.jay.blog.dao.*;
+import com.jay.blog.entity.*;
 import com.jay.blog.service.BlogService;
 import com.jay.blog.utils.CollectionsUtil;
 import com.jay.blog.utils.MarkdownUtils;
@@ -50,6 +45,14 @@ public class BlogServiceImp implements BlogService {
     @Autowired
     private BlogAndTagDao blogAndTagDao;
 
+    @Autowired
+    private UserDao userDao;
+
+    @Autowired
+    private TypeDao typeDao;
+
+    @Autowired
+    private TagDao tagDao;
 
     // TODO 测试
     /* 获取一页博客*/
@@ -63,6 +66,11 @@ public class BlogServiceImp implements BlogService {
                             .map(e-> BlogVOConverter.blogToBlogVoExceptContent(e))
                             .collect(Collectors.toList()));
         return resultPage;
+    }
+
+    @Override
+    public List<Long> listBlogId(){
+        return blogDao.listBlogId();
     }
 
     // TODO 测试
@@ -103,10 +111,12 @@ public class BlogServiceImp implements BlogService {
 
         if (blogQuery != null) {
             Map<String, Object> condition = new LinkedHashMap<>();
-            if (blogQuery.getTitle() != null && !blogQuery.getTitle().equals(""))
+            if (blogQuery.getTitle() != null && !blogQuery.getTitle().equals("")) {
                 condition.put("title", blogQuery.getTitle());
-            if (blogQuery.getTypeId() != null)
+            }
+            if (blogQuery.getTypeId() != null) {
                 condition.put("type_id", blogQuery.getTypeId());
+            }
 
             condition.put("recommend", blogQuery.isRecommend());
             queryWrapper.allEq(condition);
@@ -134,8 +144,9 @@ public class BlogServiceImp implements BlogService {
         // 搜索 blog 的 content 和title
         blogContentPage = blogContentDao.listBlogContentByQuery(query,blogContentPage);
         // 搜索关键字失败
-        if (CollectionsUtil.checkListIsNull(blogContentPage.getRecords()))
+        if (CollectionsUtil.checkListIsNull(blogContentPage.getRecords())) {
             return null;
+        }
 
         // 获取搜索匹配到的 blogIds, 根据 blogIds 获取对应的 blog
         List<Long> blogIds = blogContentPage.getRecords()
@@ -152,13 +163,21 @@ public class BlogServiceImp implements BlogService {
         return resultPage;
     }
 
+
     @Override
-    public BlogVO getOneById(Long blogId){
+    public BlogVO getBlogVOById(Long blogId){
         Blog blog =  blogDao.selectById(blogId);
-        //String blogContentMd = blogContentDao.selectContentMd(blogId);
         BlogContent blogContent = blogContentDao.selectOneByBlogId(blogId);
-        blogContent.setContentHtml(null);
+        User user = userDao.selectById(blog.getUserId());
+        user.setPassword(null);
+        Type type = typeDao.selectById(blog.getTypeId());
         BlogVO blogVO = BlogVOConverter.blogToBlogVo(blog, blogContent);
+
+        List<Tag> tags = tagDao.listTag(blogId);
+
+        blogVO.setUser(user);
+        blogVO.setType(type);
+        blogVO.setTags(tags);
         return blogVO;
     }
 
@@ -276,8 +295,9 @@ public class BlogServiceImp implements BlogService {
     @Transactional
     public int updateOne(BlogVO blogVO) throws NotFoundException {
         Blog blog = blogDao.selectById(blogVO.getId());
-        if (blog == null)
+        if (blog == null) {
             throw new NotFoundException("该博客不存在");
+        }
         // 删除 blog_tag 关系表中，有关该博客的标签关系
         blogAndTagDao.delete(new QueryWrapper<BlogAndTag>().eq("blog_id", blogVO.getId()));
         // 更新 blog 和 BlogContent

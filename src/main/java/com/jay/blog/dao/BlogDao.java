@@ -52,4 +52,7 @@ public interface BlogDao extends BaseMapper<Blog> {
             + "</script>"
     })
     public List<Blog> listBlogByBlogIds(List<Long> blogIds);
+
+    @Select("select id from b_blog")
+    public List<Long> listBlogId();
 }

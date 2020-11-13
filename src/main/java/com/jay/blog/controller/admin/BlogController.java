@@ -2,7 +2,6 @@ package com.jay.blog.controller.admin;
 
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jay.blog.converter.BlogVOConverter;
 import com.jay.blog.entity.*;
 import com.jay.blog.service.Imp.BlogServiceImp;
 import com.jay.blog.service.Imp.TagServiceImp;
@@ -143,11 +142,9 @@ public class BlogController {
     @GetMapping("/{id}/input")
     public String edit(@PathVariable Long id, ModelMap model){
         setTypesAndTags(model);
-        BlogVO blogVO = blogService.getOneById(id);
+        BlogVO blogVO = blogService.getBlogVOById(id);
         // 获取博客的 tag。
         blogVO.setTagIds(tagService.getTagIds(blogVO.getId()));
-        Type type = typeService.getOneById(blogVO.getType().getId());
-        blogVO.setType(type);
         model.addAttribute("blog", blogVO);
         return INPUT;
     }

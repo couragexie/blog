@@ -1,0 +1,111 @@
+2020-11-11 09:41:56 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 15712 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 09:41:56 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 09:42:00 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.592 seconds (JVM running for 5.348)
+2020-11-11 10:03:06 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 15712 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:03:06 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:03:07 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.569 seconds (JVM running for 1272.139)
+2020-11-11 10:04:52 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 14684 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:04:52 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:04:55 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.33 seconds (JVM running for 5.009)
+2020-11-11 10:06:17 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 17668 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:06:17 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:06:21 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.206 seconds (JVM running for 4.881)
+2020-11-11 10:13:06 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 9648 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:13:06 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:13:10 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.142 seconds (JVM running for 4.831)
+2020-11-11 10:28:18 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 9648 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:28:18 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:28:19 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.567 seconds (JVM running for 914.431)
+2020-11-11 10:30:13 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 9648 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:30:13 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:30:14 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.486 seconds (JVM running for 1029.478)
+2020-11-11 10:32:41 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 9648 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:32:41 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:32:42 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.385 seconds (JVM running for 1177.107)
+2020-11-11 10:32:52 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 9648 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:32:52 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:32:53 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.369 seconds (JVM running for 1188.475)
+2020-11-11 10:33:15 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 12448 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:33:15 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:33:19 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.826 seconds (JVM running for 6.689)
+2020-11-11 10:35:40 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 16004 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:35:40 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:35:45 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.932 seconds (JVM running for 5.916)
+2020-11-11 10:35:57 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:35:57 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-11 10:35:57 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:35:57 [http-nio-8080-exec-1] INFO  com.jay.blog.controller.IndexController - 【访问主页】pageTotal=50, pages=9
+2020-11-11 10:35:58 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-11 10:35:58 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:36:00 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-11 10:39:26 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 16004 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:39:26 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:39:28 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.643 seconds (JVM running for 229.194)
+2020-11-11 10:40:01 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 1452 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:40:01 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:40:05 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.946 seconds (JVM running for 5.882)
+2020-11-11 10:42:48 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 1452 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:42:48 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:42:50 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.915 seconds (JVM running for 170.438)
+2020-11-11 10:43:47 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:43:48 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-11 10:43:48 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:43:48 [http-nio-8080-exec-1] INFO  com.jay.blog.controller.IndexController - 【访问主页】pageTotal=50, pages=9
+2020-11-11 10:43:49 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-11 10:43:49 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:45:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 1452 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:45:54 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:45:56 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.856 seconds (JVM running for 356.452)
+2020-11-11 10:46:13 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 1452 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:46:13 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:46:14 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.904 seconds (JVM running for 374.789)
+2020-11-11 10:47:35 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-11 10:47:36 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-11 10:47:36 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:47:36 [http-nio-8080-exec-4] INFO  com.jay.blog.controller.IndexController - 【访问主页】pageTotal=50, pages=9
+2020-11-11 10:47:37 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-11 10:47:37 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-11 10:48:16 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 4908 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:48:16 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:48:21 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.909 seconds (JVM running for 5.731)
+2020-11-11 10:57:39 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 4908 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:57:39 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:57:42 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 3.053 seconds (JVM running for 566.638)
+2020-11-11 10:57:50 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 4908 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:57:50 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:57:53 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.783 seconds (JVM running for 577.808)
+2020-11-11 10:58:29 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 17652 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 10:58:29 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 10:58:34 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.069 seconds (JVM running for 5.873)
+2020-11-11 11:13:38 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 11512 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 11:13:38 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 11:13:46 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 15856 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 11:13:46 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 11:13:51 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.441 seconds (JVM running for 6.259)
+2020-11-11 11:15:09 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on DESKTOP-KKRTA0U with PID 15856 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 11:15:09 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-11 11:15:11 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.09 seconds (JVM running for 85.963)
+2020-11-11 17:45:07 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 12936 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 17:45:07 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 17:45:13 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.094 seconds (JVM running for 7.205)
+2020-11-11 17:58:43 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 17832 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 17:58:43 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 17:58:49 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.218 seconds (JVM running for 7.48)
+2020-11-11 18:02:12 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 20104 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:02:12 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:02:17 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.181 seconds (JVM running for 7.343)
+2020-11-11 18:03:15 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 9088 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:03:15 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:03:20 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.123 seconds (JVM running for 7.267)
+2020-11-11 18:04:36 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 20980 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:04:36 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:04:42 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.099 seconds (JVM running for 7.41)
+2020-11-11 18:17:34 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 19140 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:17:34 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:17:39 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.003 seconds (JVM running for 7.093)
+2020-11-11 18:19:38 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 20664 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:19:38 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:19:44 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.173 seconds (JVM running for 7.311)
+2020-11-11 18:20:27 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 16360 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-11 18:20:27 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-11 18:20:34 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.52 seconds (JVM running for 7.694)
