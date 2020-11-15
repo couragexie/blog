@@ -2,6 +2,8 @@ package com.jay.blog.search;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jay.blog.converter.BlogVOConverter;
 import com.jay.blog.search.model.BlogDocument;
 import com.jay.blog.service.BlogService;
@@ -77,8 +79,17 @@ public class EsTest {
     }
 
     @Test
-    public void fullSearch(){
+    public void fullSearch() throws IOException {
         List<String> searchFields = new ArrayList<>();
+        searchFields.add("contentMd");
+        searchFields.add("title");
+        String query="java";
+        IPage<BlogDocument> page = new Page<>();
+        esHandler.fullSearch("blog", searchFields,query, page, BlogDocument.class);
+        for (BlogDocument blogDocument : page.getRecords()){
+            System.out.println(blogDocument.getTitle());
+        }
+        System.out.println(page.getTotal());
 
     }
 

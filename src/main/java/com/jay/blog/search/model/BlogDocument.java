@@ -18,6 +18,7 @@ import java.util.List;
 @Data
 public class BlogDocument {
 
+    private Long id;
     /*标题*/
     private String title;
 

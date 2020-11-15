@@ -24,6 +24,7 @@ import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.PutMappingRequest;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -158,17 +159,16 @@ public class EsHandler {
      * @param index 索引
      * @param querys key 为指定搜索的字段，value 为查询的值
      */
-    public <T> IPage<T> fullSearch(String index, Map<String, String> querys, IPage<T> page, Class<T> returnType ) throws IOException {
-        logger.info(">>>>> Es 全文搜索: index={}, query={}", index,querys);
+    public <T> IPage<T> fullSearch(String index, List<String> fields, String query, IPage<T> page, Class<T> returnType ) throws IOException {
+        logger.info(">>>>> Es 全文搜索: index={}, query={}", index,query);
         SearchRequest searchRequest = new SearchRequest();
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-        if (!StringUtils.checkIsEmpty(null)){
+        if (!StringUtils.checkIsEmpty(index)){
             searchRequest.indices(index);
         }
         // 构建查询的字段和值
-        Set<String> keys = querys.keySet();
-        for (String field : keys){
-            sourceBuilder.query(QueryBuilders.matchQuery(field, querys.get(field)));
+        for (String field : fields){
+            sourceBuilder.query(QueryBuilders.matchQuery(field, query));
         }
         // TODO 构建多个字段搜索
         sourceBuilder.from((int)page.getCurrent());
@@ -177,7 +177,7 @@ public class EsHandler {
 
         SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
         SearchHits searchHits = response.getHits();
-        page.setTotal(searchHits.getTotalHits());
+        page.setTotal(searchHits.getHits().length);
         // 获取查询的 document
         List<T> hitObjects = new ArrayList<>();
         for (SearchHit searchHit : searchHits){
