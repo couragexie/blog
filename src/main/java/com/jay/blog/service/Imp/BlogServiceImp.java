@@ -270,6 +270,7 @@ public class BlogServiceImp implements BlogService {
         // 插入 blog 和 blogContent
         // blog 插入后，mybatis 会将 id 赋值到 blog 实例中
         blogDao.insert(blog);
+        blogVO.setId(blog.getId());
         blogContent.setBlogId(blog.getId());
         blogContentDao.insert(blogContent);
         // 将 blogVO 中一个包含所有标签的String值转成List<Long>,

@@ -1,6 +1,7 @@
 package com.jay.blog.vo;
 
 import com.jay.blog.entity.*;
+import com.jay.blog.utils.StringUtils;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
@@ -66,8 +67,8 @@ public class BlogVO implements Serializable{
         return "BlogVO{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", contentMd='" + contentMd.substring(0,50) + '\'' +
-                ", contentHtml='" + contentHtml.substring(0,50) + '\'' +
+                ", contentMd='" + StringUtils.subStringIfNotNull(contentMd, 0, 50) + '\'' +
+                ", contentHtml='" + StringUtils.subStringIfNotNull(contentHtml, 0, 50) + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", description='" + description + '\'' +
                 ", flag='" + flag + '\'' +
@@ -86,4 +87,5 @@ public class BlogVO implements Serializable{
                 ", comments=" + comments +
                 '}';
     }
+
 }

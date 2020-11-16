@@ -1,14 +1,13 @@
 package com.jay.blog.search;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jay.blog.converter.BlogVOConverter;
+import com.jay.blog.search.es.EsHandler;
 import com.jay.blog.search.model.BlogDocument;
 import com.jay.blog.service.BlogService;
 import com.jay.blog.vo.BlogVO;
-import oracle.jrockit.jfr.StringConstantPool;
 import org.elasticsearch.common.Strings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
@@ -19,7 +18,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author: xiejie
@@ -69,7 +67,7 @@ public class EsTest {
     @Test
     public void bulkDoc() throws IOException {
         List<Long> blogsId = blogService.listBlogId();
-        for (Long blogId : blogsId.subList(0, 10)){
+        for (Long blogId : blogsId){
             BlogVO blogVO = blogService.getBlogVOById(blogId);
             BlogDocument blogDocument = BlogVOConverter.blogVOToBlogDocument(blogVO);
             String documentJson = JSONObject.toJSONString(blogDocument);
@@ -84,8 +82,9 @@ public class EsTest {
         searchFields.add("contentMd");
         searchFields.add("title");
         String query="java";
-        IPage<BlogDocument> page = new Page<>();
-        esHandler.fullSearch("blog", searchFields,query, page, BlogDocument.class);
+        Page<BlogDocument> page = new Page<>();
+        String[] fields = searchFields.toArray(new String[searchFields.size()]);
+        esHandler.fullSearch("blog", fields,query, page, BlogDocument.class);
         for (BlogDocument blogDocument : page.getRecords()){
             System.out.println(blogDocument.getTitle());
         }
@@ -124,7 +123,7 @@ public class EsTest {
                 }
                 jsonBuilder.endObject();
                 // type
-                jsonBuilder.startObject("blogType");
+                jsonBuilder.startObject("type");
                 {
                     jsonBuilder.field("type", "object");
                     jsonBuilder.startObject("properties");
@@ -210,7 +209,7 @@ public class EsTest {
 
                         jsonBuilder.startObject("type");
                         {
-                            jsonBuilder.field("type", "integer");
+                            jsonBuilder.field("type", "long");
                         }
                         jsonBuilder.endObject();
                     }
@@ -232,13 +231,13 @@ public class EsTest {
 
                 jsonBuilder.startObject("createTime");
                 {
-                    jsonBuilder.field("type","date");
+                    jsonBuilder.field("type","long");
                 }
                 jsonBuilder.endObject();
 
                 jsonBuilder.startObject("updateTime");
                 {
-                    jsonBuilder.field("type","date");
+                    jsonBuilder.field("type","long");
                 }
                 jsonBuilder.endObject();
             }

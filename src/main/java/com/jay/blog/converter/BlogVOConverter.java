@@ -90,7 +90,6 @@ public class BlogVOConverter {
     public static BlogVO blogDocumentToBlogVO(BlogDocument blogDocument){
         BlogVO blogVO = new BlogVO();
         BeanUtils.copyProperties(blogDocument, blogVO);
-        blogVO.setContentMd(null);
         return blogVO;
     }
 

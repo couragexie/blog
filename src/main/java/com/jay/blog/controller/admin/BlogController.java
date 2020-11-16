@@ -34,9 +34,12 @@ import java.util.List;
 @RequestMapping("/admin/blogs")
 public class BlogController {
 
-    private  final static String LIST = "admin/blogs";
+    private final static String LIST = "admin/blogs";
     private final static String INPUT = "admin/blogs-input";
     private final static String REDIRECT_LIST = "redirect:/admin/blogs";
+
+    private final static String UPDATE="update";
+    private final static String CREATE="create";
 
 
     @Autowired
@@ -120,8 +123,9 @@ public class BlogController {
     }
 
     private BlogQuery checkQuery(BlogQuery blogQuery){
-        if (blogQuery.getTitle().equals("")&&!blogQuery.isRecommend()&&blogQuery.getTypeId()==null)
+        if (blogQuery.getTitle().equals("")&&!blogQuery.isRecommend()&&blogQuery.getTypeId()==null) {
             return null;
+        }
         return blogQuery;
     }
 
@@ -157,17 +161,23 @@ public class BlogController {
         blogVO.setUser(new User( ((User)session.getAttribute("user")).getId() ) );
         //System.out.println(blogVO);
         int ok = -1;
-        if (blogVO.getId() == null)
+        String operate = null;
+
+        if (blogVO.getId() == null) {
+            operate = CREATE;
             ok = blogService.saveOne(blogVO);
-        else
+        } else {
+            operate = UPDATE;
             ok = blogService.updateOne(blogVO);
+        }
 
         if(ok != -1) {
-            attributes.addAttribute("message", "添加成功");
+            attributes.addAttribute("message", operate + " success");
 
         }else {
-            attributes.addAttribute("message", "添加失败");
+            attributes.addAttribute("message", operate + " fail");
         }
+
 
         return REDIRECT_LIST;
     }

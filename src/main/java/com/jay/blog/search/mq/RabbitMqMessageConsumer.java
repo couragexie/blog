@@ -14,13 +14,13 @@ import org.springframework.stereotype.Component;
 @Component
 @RabbitListener(queues = RabbitmqConfig.QUEUE_NAME)
 public class RabbitMqMessageConsumer {
-    private final static Logger logger = LoggerFactory.getLogger("MQ-ES-SYN");
+    private final static Logger logger = LoggerFactory.getLogger("MQ-SYN");
 
     @RabbitHandler
     public void esMessageConcumer(MqEsIndexMessage message){
-        logger.info(">>>>> mq 收到 es1 同步消息：{}" + message);
+        logger.info(">>>>> mq consumer message：{}", message);
         System.out.println(message);
-        logger.info(">>>>> es 同步成功");
+
     }
 
     @RabbitHandler

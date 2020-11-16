@@ -61,3 +61,233 @@
 2020-11-15 23:53:32 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=spring
 2020-11-15 23:54:14 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=springBoot
 2020-11-15 23:54:51 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 09:35:38 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=1:
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=2:
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=5:
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=6:
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=7:
+2020-11-16 09:35:39 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=8:
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=9:
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=10:
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=11:
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=12:
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:40 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=13:
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=14:
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=15:
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:41 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=16:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=17:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=18:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=19:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=20:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=21:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=22:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=23:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=24:
+2020-11-16 09:35:42 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:43 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=25:
+2020-11-16 09:35:43 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:43 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=28:
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=29:
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=30:
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:44 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=31:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=32:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=34:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=35:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=38:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=39:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=40:
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:45 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=41:
+2020-11-16 09:35:46 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:46 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=42:
+2020-11-16 09:35:46 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:46 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=43:
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=44:
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=45:
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:47 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=46:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=47:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=48:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=49:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=50:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=51:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=52:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=53:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=56:
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=57:
+2020-11-16 09:35:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=61:
+2020-11-16 09:35:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:35:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=62:
+2020-11-16 09:35:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 09:36:39 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 09:37:45 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 11:55:17 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 11:57:28 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 11:58:05 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 16:05:11 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 16:07:18 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 16:11:52 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"integer"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"date"},"updateTime":{"type":"date"}}}
+2020-11-16 16:12:50 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"integer"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"date"},"updateTime":{"type":"date"}}}
+2020-11-16 16:14:59 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"integer"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 16:16:50 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 16:18:10 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog222, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 16:18:44 [main] INFO  msg: >>>>> Es 创建索引 mapping, index=blog222, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 16:19:19 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog222, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 16:59:38 [main] INFO  msg: >>>>> Es 删除索引 index=blog
+2020-11-16 17:00:15 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 17:01:35 [main] INFO  msg: >>>>> Es 创建索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 17:02:07 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"blogType":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 17:42:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=1:
+2020-11-16 17:42:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:42:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=2:
+2020-11-16 17:42:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:42:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=5:
+2020-11-16 17:43:07 [main] INFO  msg: >>>>> Es 删除索引 index=blog
+2020-11-16 17:43:59 [main] INFO  msg: >>>>> Es 创建索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"ype":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 17:44:54 [main] INFO  msg: >>>>> Es 更新索引 mapping, index=blog, mapping={"properties":{"title":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"description":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"contentMd":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"type":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"tags":{"type":"object","properties":{"name":{"type":"text","analyzer":"ik_max_word","search_analyzer":"ik_max_word"},"id":{"type":"long"}}},"user":{"type":"object","properties":{"id":{"type":"long"},"nickname":{"type":"text"},"username":{"type":"text"},"password":{"type":"text"},"email":{"type":"text"},"avatar":{"type":"text"},"type":{"type":"long"}}},"firstPicture":{"type":"text"},"views":{"type":"integer"},"createTime":{"type":"long"},"updateTime":{"type":"long"}}}
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=1:
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=2:
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=5:
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:48 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=6:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=7:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=8:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=9:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=10:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=11:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=12:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=13:
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:49 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=14:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=15:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=16:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=17:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=18:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=19:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=20:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=21:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=22:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=23:
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:50 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=24:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=25:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=28:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=29:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=30:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=31:
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:51 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=32:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=34:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=35:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=38:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=39:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=40:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=41:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=42:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=43:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=44:
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:52 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=45:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=46:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=47:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=48:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=49:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=50:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=51:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=52:
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:53 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=53:
+2020-11-16 17:45:54 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:54 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=56:
+2020-11-16 17:45:54 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:54 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=57:
+2020-11-16 17:45:54 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:55 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=61:
+2020-11-16 17:45:55 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:45:55 [main] INFO  msg: >>>>> 开始同步 Es 数据: index=blog, docId=62:
+2020-11-16 17:45:55 [main] INFO  msg: >>>>> 结束同步 Es 数据
+2020-11-16 17:47:23 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 17:48:06 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 17:59:42 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java
+2020-11-16 18:00:19 [main] INFO  msg: >>>>> Es 全文搜索: index=blog, query=java

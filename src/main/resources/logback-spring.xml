@@ -77,6 +77,25 @@
         </encoder>
     </appender>
 
+    <!--  记录同步日志  -->
+    <appender name="MQ-APPENDER" class="ch.qos.logback.core.FileAppender">
+        <!-- 追加写的方式       -->
+        <append>true</append>
+        <!--临界值过滤器，过滤掉日志级别低于当前日志掉级别掉日志       -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${logging.level}</level>
+        </filter>
+        <!-- 指定写入的文件路径名       -->
+        <file>${logging.path}/mq-syn.log</file>
+        <!-- 格式化输出       -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level msg: %msg%n</pattern>
+            <!-- 编码 -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
     <!-- logger 指定打印哪些包    -->
     <logger name="com.jay.blog"
             level="${logging.level}" additivity="false">
@@ -91,6 +110,10 @@
 
     <logger name="ES-SYN" level="${logging.level}" additivity="true">
         <appender-ref ref="ES-APPENDER"></appender-ref>
+    </logger>
+
+    <logger name="MQ-SYN" level="${logging.level}" additivity="true">
+        <appender-ref ref="MQ-APPENDER"></appender-ref>
     </logger>
 
 <!-- 根 logger 一种日志打印器，root 打印到输出台，包含项目的启动信息   -->

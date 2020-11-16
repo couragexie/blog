@@ -6,6 +6,7 @@ import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -34,12 +35,12 @@ public class Producer {
 //        String routingKey = "es-blog";
         String routingKey = RabbitmqConfig.ROUTING_KEY;
 
-        MqEsIndexMessage message1 = new MqEsIndexMessage(10L, MqEsIndexMessage.CREATE_OR_UPDATE);
 
         // producer 绑定交换器
         for (int i = 0; i < 100; i ++) {
-            byte[] message = new String("this is a new blog" + i).getBytes();
-            channel.basicPublish(exchangeName, routingKey, null, message);
+            MqEsIndexMessage message = new MqEsIndexMessage(10L, MqEsIndexMessage.CREATE_OR_UPDATE);
+            //byte[] message = new String("this is a new blog" + i).getBytes();
+            //channel.basicPublish(exchangeName, routingKey, null, message);
             //Thread.sleep(1000);
         }
 
@@ -47,4 +48,8 @@ public class Producer {
         connection.close();
     }
 
+    public static void publish(){
+
+
+    }
 }
