@@ -1,0 +1,9 @@
+2020-11-17 14:27:37 [main] INFO  com.jay.blog.search.SearchServiceTest - Starting SearchServiceTest on DESKTOP-KKRTA0U with PID 13104 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-17 14:27:37 [main] INFO  com.jay.blog.search.SearchServiceTest - The following profiles are active: dev
+2020-11-17 14:27:45 [main] INFO  com.jay.blog.search.SearchServiceTest - Started SearchServiceTest in 9.574 seconds (JVM running for 12.898)
+2020-11-17 14:29:18 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 4040 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-17 14:29:18 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-17 14:29:25 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.92 seconds (JVM running for 8.001)
+2020-11-17 14:29:46 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on DESKTOP-KKRTA0U with PID 8308 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-17 14:29:46 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-17 14:29:52 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.241 seconds (JVM running for 7.346)

@@ -71,6 +71,5 @@ public class SearchServiceImp implements SearchService {
     @Override
     public void deleteDoc(Long blogId) throws IOException {
         esHandler.deleteDoc(INDEX, blogId.toString());
-
     }
 }
