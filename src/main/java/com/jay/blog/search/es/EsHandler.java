@@ -30,6 +30,7 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.sort.SortOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,10 +108,10 @@ public class EsHandler {
      * @since 2020/11/13
      * @param
      */
-    public boolean createIndexMapping(String index, String mapping) throws IOException {
-        logger.info(">>>>> Es 创建索引 mapping, index={}, mapping={}", index, mapping);
+    public boolean createIndexMapping(String index) throws IOException {
+        logger.info(">>>>> Es 创建索引 mapping, index={}", index);
         CreateIndexRequest request = new CreateIndexRequest(index);
-        request.source(mapping, XContentType.JSON);
+//        request.source(mapping, XContentType.JSON);
         CreateIndexResponse createIndexResponse = client.indices().create(request, RequestOptions.DEFAULT);
         return createIndexResponse.isAcknowledged();
     }
@@ -161,18 +162,19 @@ public class EsHandler {
      *
      */
     public <T> Page<T> fullSearch(String index, String[] fields, String query, Page<T> page, Class<T> returnType ) throws IOException {
-        logger.info(">>>>> Es 全文搜索: index={}, query={}", index,query);
+        logger.info(">>>>> Es 全文搜索: index={}, query={}, pageNo={}, pageSize={}", index,query, page.getCurrent(), page.getSize());
         SearchRequest searchRequest = new SearchRequest();
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
         if (!StringUtils.checkIsEmpty(index)){
             searchRequest.indices(index);
         }
         // 构建查询的字段和值
-
         sourceBuilder.query(QueryBuilders.multiMatchQuery(query, fields));
-
-        sourceBuilder.from((int)page.getCurrent());
+        // Es 的分页搜索是从 0 开始的，需要手机计算偏移量
+        sourceBuilder.from(((int)page.getCurrent()-1) * (int)page.getSize());
         sourceBuilder.size((int)page.getSize());
+        sourceBuilder.sort("updateTime", SortOrder.DESC);
+
         searchRequest.source(sourceBuilder);
 
         SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);

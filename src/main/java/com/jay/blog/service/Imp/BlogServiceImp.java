@@ -1,8 +1,6 @@
 package com.jay.blog.service.Imp;
 
-import cn.hutool.core.collection.CollectionUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jay.blog.cache.RedisCache;
 import com.jay.blog.cache.RedisCacheRemove;
@@ -12,8 +10,7 @@ import com.jay.blog.dao.*;
 import com.jay.blog.entity.*;
 import com.jay.blog.service.BlogService;
 import com.jay.blog.utils.CollectionsUtil;
-import com.jay.blog.utils.MarkdownUtils;
-import com.jay.blog.utils.PageUtil;
+import com.jay.blog.utils.PageUtils;
 import com.jay.blog.vo.BlogQuery;
 import com.jay.blog.vo.BlogVO;
 import lombok.extern.slf4j.Slf4j;
@@ -59,7 +56,7 @@ public class BlogServiceImp implements BlogService {
     @Override
     public Page<BlogVO> listBlog(Page<Blog> page) {
         page =  blogDao.selectPageOrderByCreateTime(page);
-        Page<BlogVO> resultPage = PageUtil.copyPage(page);
+        Page<BlogVO> resultPage = PageUtils.copyPage(page);
         //System.out.println(resultPage);
         // 将查询到的结果 Blog 转换成blog;
         resultPage.setRecords(page.getRecords().stream()
@@ -78,7 +75,7 @@ public class BlogServiceImp implements BlogService {
     @Override
     public Page<BlogVO> listBlogByTagId(Long tagId, Page<Blog> page) {
          page = blogDao.selectPageByTagId(tagId, page);
-         Page<BlogVO> resultPage = PageUtil.copyPage(page);
+         Page<BlogVO> resultPage = PageUtils.copyPage(page);
 
          resultPage.setRecords(page.getRecords().stream()
                                    .map(e-> BlogVOConverter.blogToBlogVoExceptContent(e))
@@ -93,7 +90,7 @@ public class BlogServiceImp implements BlogService {
     @Override
     public Page<BlogVO> listBlogByTypeId(Long typeId, Page<Blog> page){
         page = blogDao.selectPage(page, new QueryWrapper<Blog>().eq("type_id", typeId));
-        Page<BlogVO> resultPage = PageUtil.copyPage(page);
+        Page<BlogVO> resultPage = PageUtils.copyPage(page);
 
         resultPage.setRecords(page.getRecords().stream()
                 .map(e-> BlogVOConverter.blogToBlogVoExceptContent(e))
@@ -140,26 +137,13 @@ public class BlogServiceImp implements BlogService {
     @Override
     public Page<BlogVO> searchListBlog(String query, int pageNo) {
         // 构建 page 查询，查询 blog 内容
-        Page<BlogContent> blogContentPage = PageUtil.generatePage(pageNo);
-        // 搜索 blog 的 content 和title
-        blogContentPage = blogContentDao.listBlogContentByQuery(query,blogContentPage);
+        Page<BlogVO> resultPage = PageUtils.generatePage(pageNo);
+        // 全文搜索，搜索字段 content 和 title
+        resultPage.setRecords(blogContentDao.listBlogContentByQuery(query,resultPage));
         // 搜索关键字失败
-        if (CollectionsUtil.checkListIsNull(blogContentPage.getRecords())) {
+        if (CollectionsUtil.checkListIsNull(resultPage.getRecords())) {
             return null;
         }
-
-        // 获取搜索匹配到的 blogIds, 根据 blogIds 获取对应的 blog
-        List<Long> blogIds = blogContentPage.getRecords()
-                                .stream()
-                                .map(blogContent -> blogContent.getBlogId())
-                                .collect(Collectors.toList());
-        List<Blog> blogs = blogDao.listBlogByBlogIds(blogIds);
-        // 生成结果返回
-        Page<BlogVO> resultPage = PageUtil.copyPage(blogContentPage);
-        // 转换 page 中records，转成 BlogVO
-        List<BlogVO> blogVOS = BlogVOConverter.blogToBlogVO(blogs, blogContentPage.getRecords());
-
-        resultPage.setRecords(blogVOS);
         return resultPage;
     }
 

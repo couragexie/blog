@@ -18,4 +18,10 @@ public interface SearchService {
     public void createDoc(Long blogId) throws IOException;
 
     public void deleteDoc(Long blogId) throws IOException;
+
+    public boolean deleteIndex(String index) throws IOException;
+
+    public boolean createIndex(String index) throws IOException;
+
+    public void bulkDoc() throws IOException;
 }

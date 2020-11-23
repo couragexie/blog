@@ -49,6 +49,7 @@ public interface BlogDao extends BaseMapper<Blog> {
             + "#{item}"
             + "</foreach>"
             + " and published = true"
+            + " order by update_time desc"
             + "</script>"
     })
     public List<Blog> listBlogByBlogIds(List<Long> blogIds);
