@@ -9,6 +9,7 @@ import com.jay.blog.search.model.BlogDocument;
 import com.jay.blog.service.SearchService;
 import com.jay.blog.utils.PageUtils;
 import com.jay.blog.vo.BlogVO;
+import lombok.AllArgsConstructor;
 import org.elasticsearch.common.Strings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
@@ -25,13 +26,13 @@ import java.util.stream.Collectors;
  * @Date: 2020/11/16 15:39
  */
 @Component
+@AllArgsConstructor
 public class SearchServiceImp implements SearchService {
     private final static String INDEX = "blog";
     private final static String TYPE = "_doc";
-    @Autowired
+
     private EsHandler esHandler;
 
-    @Autowired
     private BlogServiceImp blogService;
 
     @Override
@@ -65,7 +66,6 @@ public class SearchServiceImp implements SearchService {
         BlogVO blogVO = blogService.getBlogVOById(blogId);
         BlogDocument blogDocument = BlogVOConverter.blogVOToBlogDocument(blogVO);
         String documentJson = JSONObject.toJSONString(blogDocument);
-        System.out.println(documentJson);
         esHandler.createDoc(INDEX, blogId.toString(), documentJson);
     }
 

@@ -1,7 +1,6 @@
 package com.jay.blog.service.Imp;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jay.blog.dao.BlogContentDao;
 import com.jay.blog.vo.BlogVO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class BlogServiceImpTest {
 
-
     @Autowired
     BlogServiceImp blogServiceImp;
-    @Autowired
-    BlogContentDao blogContentDao;
 
     @Test
     public void test(){
@@ -35,4 +31,5 @@ class BlogServiceImpTest {
             System.out.println(blogVO.getTitle());
         }
     }
+
 }

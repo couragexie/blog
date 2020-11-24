@@ -1,0 +1,1272 @@
+2020-11-23 14:37:37 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:37:37 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:37:47 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 11.343 seconds (JVM running for 13.801)
+2020-11-23 14:39:42 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-23 14:39:43 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:39:44 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:39:44 [http-nio-8080-exec-2] INFO  com.jay.blog.controller.IndexController - 【访问主页】pageTotal=50, pages=9
+2020-11-23 14:39:45 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:39:45 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:39:46 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 14:39:48 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 14:39:48 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:39:48 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:39:49 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:39:49 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/blog/28, parameters:
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.aspect.RedisAspect - keySEL : #blogId
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:blog::28
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.aspect.RedisAspect - ====== Redis 中不存在该缓存，从数据库中查找 ======
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.service.Imp.BlogServiceImp - 获取id为 28 的博客
+2020-11-23 14:40:03 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 存入缓冲 key:blog::28, expire:43200
+2020-11-23 14:40:04 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:40:04 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:40:04 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/comments/28, parameters:
+2020-11-23 14:40:32 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:40:32 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:40:32 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:40:32 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:40:32 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:40:34 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:40:34 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:40:35 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:40:35 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:40:35 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:47:40 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:47:40 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:47:42 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.861 seconds (JVM running for 608.543)
+2020-11-23 14:48:21 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:48:21 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:48:22 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.749 seconds (JVM running for 648.702)
+2020-11-23 14:48:49 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:48:49 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:48:53 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:48:53 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:48:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.724 seconds (JVM running for 680.563)
+2020-11-23 14:49:08 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:49:09 [http-nio-8080-exec-1] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 14:49:12 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:12 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:12 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:49:12 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:49:12 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 14:49:43 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:49:44 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:44 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:44 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:49:44 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:49:49 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:49:50 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:50 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:49:50 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:49:50 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:07 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:50:07 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:07 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:07 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:07 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:10 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:50:10 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:10 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:10 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:10 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:14 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:50:14 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:14 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:14 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:14 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:17 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:50:17 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:17 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:17 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:17 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:19 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:50:19 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:19 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:20 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:20 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:22 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 14:50:22 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:22 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:22 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:22 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:24 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=4 ,query=java ,
+2020-11-23 14:50:24 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:24 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:25 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:25 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:50:26 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=5 ,query=java ,
+2020-11-23 14:50:27 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:27 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:50:27 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:50:27 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:51:23 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:51:23 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:51:25 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.739 seconds (JVM running for 831.006)
+2020-11-23 14:51:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 14:51:54 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 14:51:56 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.788 seconds (JVM running for 862.229)
+2020-11-23 14:52:18 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 14:52:19 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:19 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:20 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:20 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:29 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:52:30 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:30 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:30 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:30 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:34 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 14:52:35 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:35 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:35 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:35 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:39 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 14:52:40 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:40 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:40 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:40 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:42 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 14:52:43 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:43 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:43 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:43 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:45 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=4 ,query=java ,
+2020-11-23 14:52:45 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:45 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:45 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:46 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:48 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=5 ,query=java ,
+2020-11-23 14:52:48 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:48 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:49 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:49 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:53 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=4 ,query=java ,
+2020-11-23 14:52:53 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:53 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:54 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:54 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 14:52:57 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=5 ,query=java ,
+2020-11-23 14:52:57 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:57 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 14:52:57 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 14:52:57 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:01:17 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:01:17 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:01:20 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 3.214 seconds (JVM running for 1426.295)
+2020-11-23 15:01:44 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:01:44 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:01:45 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.743 seconds (JVM running for 1451.75)
+2020-11-23 15:01:45 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/blog/28, parameters:
+2020-11-23 15:01:45 [http-nio-8080-exec-1] INFO  com.jay.blog.aspect.RedisAspect - keySEL : #blogId
+2020-11-23 15:01:46 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:blog::28
+2020-11-23 15:01:46 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:127.0.0.1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:01:46 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:01:49 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:127.0.0.1, url:http://localhost:8080/search, parameters:pageNo=5 ,query=java ,
+2020-11-23 15:01:49 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:01:49 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:01:49 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:01:49 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:01:49 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 15:01:52 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 15:01:52 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:01:52 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:01:52 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:01:52 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:02:06 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 15:02:06 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:06 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:06 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:02:06 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:02:11 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:02:12 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:12 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:12 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:02:12 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:02:15 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 15:02:15 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:15 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:15 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:02:15 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:02:29 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:02:29 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:29 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:02:30 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:127.0.0.1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:02:30 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:02:51 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:02:51 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:02:55 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 3.174 seconds (JVM running for 1520.875)
+2020-11-23 15:04:46 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:04:46 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:04:46 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:04:47 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:04:47 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:04:47 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 15:04:55 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 15:04:55 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:04:55 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:04:56 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:04:56 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:05:00 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 15:05:00 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:00 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:00 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:05:00 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:05:05 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 15:05:05 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:05 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:05 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:05:05 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:05:08 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 15:05:08 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:08 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:05:09 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:05:09 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:20:33 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:20:55 [http-nio-8080-exec-7] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 15:20:57 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:20:57 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:20:57 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:20:57 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:21:12 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 3252 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:21:12 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:21:17 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.943 seconds (JVM running for 7.065)
+2020-11-23 15:22:05 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 6980 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:22:05 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:22:10 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.82 seconds (JVM running for 6.92)
+2020-11-23 15:23:07 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:23:07 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:23:08 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.716 seconds (JVM running for 2734.846)
+2020-11-23 15:23:19 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:23:19 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:23:21 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 10644 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:23:21 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:23:22 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.693 seconds (JVM running for 2747.957)
+2020-11-23 15:23:26 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.974 seconds (JVM running for 7.103)
+2020-11-23 15:26:32 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 5392 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:26:32 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:26:39 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.869 seconds (JVM running for 7.985)
+2020-11-23 15:27:40 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 2176 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:27:40 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:27:45 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.873 seconds (JVM running for 6.97)
+2020-11-23 15:40:28 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:40:28 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:40:31 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.837 seconds (JVM running for 3776.881)
+2020-11-23 15:40:31 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 11092 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:40:31 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:40:36 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.893 seconds (JVM running for 7.014)
+2020-11-23 15:41:42 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 12716 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:41:42 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:41:49 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 7.002 seconds (JVM running for 8.09)
+2020-11-23 15:45:54 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 15152 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:45:54 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:46:00 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 6.057 seconds (JVM running for 7.324)
+2020-11-23 15:52:20 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 828 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:52:20 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:52:25 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.953 seconds (JVM running for 7.018)
+2020-11-23 15:55:44 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:55:44 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 15:55:46 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.58 seconds (JVM running for 4692.59)
+2020-11-23 15:55:47 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 7900 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 15:55:47 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 15:55:52 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.884 seconds (JVM running for 7.092)
+2020-11-23 15:56:17 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:56:18 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:18 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:18 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:18 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:18 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 15:56:21 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 15:56:21 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:21 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:21 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:21 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:24 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 15:56:24 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:24 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:24 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:24 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:29 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 15:56:29 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:29 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:29 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:29 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:33 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=4 ,query=java ,
+2020-11-23 15:56:33 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:33 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:33 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:33 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:35 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=5 ,query=java ,
+2020-11-23 15:56:35 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:35 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:35 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:35 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:37 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=6 ,query=java ,
+2020-11-23 15:56:37 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:37 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:37 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:37 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:39 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=7 ,query=java ,
+2020-11-23 15:56:39 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:39 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:39 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:39 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:56:50 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 15:56:50 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:50 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:56:50 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:56:50 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 15:57:19 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 15:57:19 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:57:19 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 15:57:20 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 15:57:20 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:01:32 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:01:32 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:01:34 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.788 seconds (JVM running for 5040.297)
+2020-11-23 16:01:49 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 2036 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:01:49 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:05:23 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 14548 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:05:23 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:05:27 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.315 seconds (JVM running for 6.25)
+2020-11-23 16:10:28 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 16:10:29 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:10:29 [http-nio-8080-exec-1] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:10:30 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:10:30 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:11:06 [http-nio-8080-exec-6] INFO  com.jay.blog.utils.MD5Utils - 加密运行时间:1.439E-4
+2020-11-23 16:11:06 [http-nio-8080-exec-6] INFO  com.jay.blog.controller.admin.LoginController - 获取到 User ：User(id=1, nickname=阿杰, username=jay, password=0f8667daad6a36069f79552e17da14fe, email=123456@163.com, avatar=/images/avatar.jpg, type=1)
+2020-11-23 16:11:06 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:11:06 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:11:08 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:11:08 [http-nio-8080-exec-4] INFO  com.jay.blog.controller.admin.BlogController - 【管理员blog】pageTotal=50, pages=5
+2020-11-23 16:11:08 [http-nio-8080-exec-6] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:11:08 [http-nio-8080-exec-6] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:11:27 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 16:11:28 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:11:28 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:11:28 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:11:28 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:11:32 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=3 ,query=java ,
+2020-11-23 16:11:32 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:11:32 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:11:32 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:11:32 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:13:52 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 14548 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:13:52 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:13:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.779 seconds (JVM running for 512.839)
+2020-11-23 16:13:55 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 16:13:56 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:13:56 [http-nio-8080-exec-3] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:13:56 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:13:56 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:14:33 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 14548 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:14:33 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:14:49 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:14:49 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:14:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.549 seconds (JVM running for 6.509)
+2020-11-23 16:15:56 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 16:15:56 [http-nio-8080-exec-1] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 16:15:57 [http-nio-8080-exec-1] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+### The error may exist in com/jay/blog/dao/BlogDao.java (best guess)
+### The error may involve com.jay.blog.dao.BlogDao.listBlogByBlogIds
+### The error occurred while executing a query
+### SQL: select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+### The error may exist in com/jay/blog/dao/BlogDao.java (best guess)
+### The error may involve com.jay.blog.dao.BlogDao.listBlogByBlogIds
+### The error occurred while executing a query
+### SQL: select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy123.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:177)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:78)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy127.listBlogByBlogIds(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy128.listBlogByBlogIds(Unknown Source)
+	at com.jay.blog.service.Imp.BlogServiceImp.searchListBlog(BlogServiceImp.java:153)
+	at com.jay.blog.service.Imp.BlogServiceImp$$FastClassBySpringCGLIB$$7515bca7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.jay.blog.service.Imp.BlogServiceImp$$EnhancerBySpringCGLIB$$efdb6cd8.searchListBlog(<generated>)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY : select * from b_blog where id in  (   ? ,  ? ,  ? ,  ? ,  ? ,  ? )  and published = trueorder by update_time desc
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:799)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:252)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:205)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy186.prepare(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:92)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 86 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: syntax error, error in :'rder by update_time desc', expect BY, actual BY pos 96, line 1, column 94, token BY
+	at com.alibaba.druid.sql.parser.SQLParser.printError(SQLParser.java:284)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:433)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:786)
+	... 117 common frames omitted
+2020-11-23 16:16:35 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:16:35 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:16:37 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.227 seconds (JVM running for 109.301)
+2020-11-23 16:16:39 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:16:39 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:16:41 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.77 seconds (JVM running for 113.482)
+2020-11-23 16:17:07 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:17:07 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:17:09 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.707 seconds (JVM running for 141.425)
+2020-11-23 16:17:13 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:17:13 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:17:15 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.988 seconds (JVM running for 147.744)
+2020-11-23 16:17:22 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 16:17:22 [http-nio-8080-exec-2] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 16:17:25 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:25 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:25 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:17:25 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:17:26 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 16:17:38 [http-nio-8080-exec-7] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=2 ,query=java ,
+2020-11-23 16:17:38 [http-nio-8080-exec-7] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 16:17:38 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:38 [http-nio-8080-exec-7] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:38 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:17:38 [http-nio-8080-exec-2] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:17:45 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:pageNo=1 ,query=java ,
+2020-11-23 16:17:45 [http-nio-8080-exec-10] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 16:17:45 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:45 [http-nio-8080-exec-10] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 16:17:45 [http-nio-8080-exec-8] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:17:45 [http-nio-8080-exec-8] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:20:25 [http-nio-8080-exec-4] INFO  com.jay.blog.aspect.RedisAspect - keySEL : #blogId
+2020-11-23 16:20:25 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:blog::61
+2020-11-23 16:20:25 [http-nio-8080-exec-4] INFO  com.jay.blog.aspect.RedisAspect - ====== Redis 中不存在该缓存，从数据库中查找 ======
+2020-11-23 16:20:25 [http-nio-8080-exec-4] INFO  com.jay.blog.service.Imp.BlogServiceImp - 获取id为 61 的博客
+2020-11-23 16:20:25 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 存入缓冲 key:blog::61, expire:43200
+2020-11-23 16:20:25 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/error, parameters:
+2020-11-23 16:20:25 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/error, parameters:
+2020-11-23 16:20:26 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 16:20:26 [http-nio-8080-exec-9] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 16:20:26 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/comments/61, parameters:
+2020-11-23 16:48:09 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:48:09 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:48:11 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.813 seconds (JVM running for 2003.255)
+2020-11-23 16:51:28 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:51:28 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:51:30 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.778 seconds (JVM running for 2202.529)
+2020-11-23 16:56:15 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:56:15 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:56:17 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.736 seconds (JVM running for 2489.756)
+2020-11-23 16:56:46 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:56:46 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:56:47 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.657 seconds (JVM running for 2519.867)
+2020-11-23 16:56:54 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 16:56:54 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 16:56:56 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.853 seconds (JVM running for 2528.413)
+2020-11-23 17:02:16 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 15796 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:02:16 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 17:02:21 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 5.939 seconds (JVM running for 7.101)
+2020-11-23 17:03:09 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:03:09 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:03:10 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.849 seconds (JVM running for 2902.882)
+2020-11-23 17:03:17 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:03:17 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:03:18 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 8532 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:03:18 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 17:03:19 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.039 seconds (JVM running for 2911.666)
+2020-11-23 17:03:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 5.835 seconds (JVM running for 7.055)
+2020-11-23 17:09:20 [main] INFO  com.jay.blog.search.EsTest - Starting EsTest on BXXX-XLS-谢杰 with PID 11424 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:09:20 [main] INFO  com.jay.blog.search.EsTest - The following profiles are active: dev
+2020-11-23 17:09:26 [main] INFO  com.jay.blog.search.EsTest - Started EsTest in 5.949 seconds (JVM running for 7.088)
+2020-11-23 17:11:22 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:11:22 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:11:24 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.725 seconds (JVM running for 3396.779)
+2020-11-23 17:22:36 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:22:36 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:22:38 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.77 seconds (JVM running for 4070.344)
+2020-11-23 17:22:44 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:22:44 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:22:48 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.859 seconds (JVM running for 4080.78)
+2020-11-23 17:24:45 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:24:45 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:24:47 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.925 seconds (JVM running for 4199.187)
+2020-11-23 17:25:03 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:25:03 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:25:08 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 4.722 seconds (JVM running for 4220.536)
+2020-11-23 17:25:31 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:25:31 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:25:34 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 3.301 seconds (JVM running for 4246.307)
+2020-11-23 17:27:32 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:27:32 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:27:34 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.905 seconds (JVM running for 4366.725)
+2020-11-23 17:27:38 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 13188 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:27:38 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:27:39 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.707 seconds (JVM running for 4371.799)
+2020-11-23 17:28:25 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:28:25 [http-nio-8080-exec-2] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:28:26 [http-nio-8080-exec-2] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:28:48 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/, parameters:
+2020-11-23 17:28:48 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:type::-1
+2020-11-23 17:28:48 [http-nio-8080-exec-4] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 17:28:48 [http-nio-8080-exec-4] INFO  com.jay.blog.controller.IndexController - 【访问主页】pageTotal=50, pages=9
+2020-11-23 17:28:49 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/footer/newblog, parameters:
+2020-11-23 17:28:49 [http-nio-8080-exec-5] INFO  com.jay.blog.cache.RedisHandler - ====== 从缓存中查找数据 key:recommendBlog::-1
+2020-11-23 17:28:51 [http-nio-8080-exec-2] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:28:51 [http-nio-8080-exec-2] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:28:51 [http-nio-8080-exec-2] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:29:09 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:29:18 [http-nio-8080-exec-10] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:29:32 [http-nio-8080-exec-10] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:29:32 [http-nio-8080-exec-5] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 17:29:58 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 7360 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 17:29:58 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 17:30:03 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.578 seconds (JVM running for 6.437)
+2020-11-23 17:44:21 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:44:26 [http-nio-8080-exec-1] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:44:41 [http-nio-8080-exec-1] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:47:14 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:47:31 [http-nio-8080-exec-4] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:47:49 [http-nio-8080-exec-4] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:47:49 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 17:48:43 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:48:43 [http-nio-8080-exec-4] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:48:43 [http-nio-8080-exec-4] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:48:43 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 17:48:48 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:48:48 [http-nio-8080-exec-4] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 17:48:48 [http-nio-8080-exec-4] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 17:48:48 [http-nio-8080-exec-3] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 17:49:15 [http-nio-8080-exec-4] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 17:49:15 [http-nio-8080-exec-4] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 18:00:59 [http-nio-8080-exec-4] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=null
+java.lang.NullPointerException: null
+	at com.jay.blog.controller.IndexController.setUser(IndexController.java:93)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 18:00:59 [http-nio-8080-exec-9] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 18:01:02 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 7360 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:01:02 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:01:04 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.795 seconds (JVM running for 1867.699)
+2020-11-23 18:01:08 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 7360 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:01:08 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:01:12 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 4780 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:01:12 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:01:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 9004 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:01:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:04:39 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 7728 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:04:39 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:07:20 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 9360 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:07:20 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:39:26 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:39:26 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:39:30 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 5.408 seconds (JVM running for 6.264)
+2020-11-23 18:40:09 [http-nio-8080-exec-1] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/search, parameters:query=java ,
+2020-11-23 18:40:09 [http-nio-8080-exec-1] ERROR com.jay.blog.controller.IndexController - es 搜索失败...走补偿机制
+2020-11-23 18:40:15 [http-nio-8080-exec-1] INFO  com.jay.blog.handler.ControllerExceptionHandler - 【请求异常】URL=http://localhost:8080/search,异常信息=Invalid bound statement (not found): com.jay.blog.dao.BlogContentMapper.listBlogContentByQuery
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.jay.blog.dao.BlogContentMapper.listBlogContentByQuery
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:50)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedMapperMethod$0(MybatisMapperProxy.java:101)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedMapperMethod(MybatisMapperProxy.java:100)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:95)
+	at com.sun.proxy.$Proxy130.listBlogContentByQuery(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy131.listBlogContentByQuery(Unknown Source)
+	at com.jay.blog.service.Imp.BlogServiceImp.searchListBlog(BlogServiceImp.java:142)
+	at com.jay.blog.service.Imp.BlogServiceImp$$FastClassBySpringCGLIB$$7515bca7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.jay.blog.service.Imp.BlogServiceImp$$EnhancerBySpringCGLIB$$272b0026.searchListBlog(<generated>)
+	at com.jay.blog.controller.IndexController.search(IndexController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-23 18:40:16 [http-nio-8080-exec-10] INFO  com.jay.blog.interceptor.VisitedInterceptor - ip:0:0:0:0:0:0:0:1, url:http://localhost:8080/favicon.ico, parameters:
+2020-11-23 18:40:34 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 10044 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:40:34 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:40:39 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 5.9 seconds (JVM running for 7.178)
+2020-11-23 18:41:33 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:41:33 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:41:36 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 3.257 seconds (JVM running for 132.294)
+2020-11-23 18:44:22 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:44:22 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:44:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 4312 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:44:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:44:25 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.442 seconds (JVM running for 300.339)
+2020-11-23 18:44:29 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 6.032 seconds (JVM running for 7.379)
+2020-11-23 18:49:21 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:49:21 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:49:23 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.897 seconds (JVM running for 598.782)
+2020-11-23 18:49:29 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:49:29 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:49:30 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 17260 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:49:30 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:49:32 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 2.413 seconds (JVM running for 607.66)
+2020-11-23 18:49:36 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 6.344 seconds (JVM running for 7.625)
+2020-11-23 18:58:28 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:58:28 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 18:58:30 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.775 seconds (JVM running for 1145.365)
+2020-11-23 18:58:43 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 11020 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 18:58:43 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 18:58:49 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 5.97 seconds (JVM running for 7.05)
+2020-11-23 19:01:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Starting BlogServiceImpTest on BXXX-XLS-谢杰 with PID 17520 (started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 19:01:24 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - The following profiles are active: dev
+2020-11-23 19:01:24 [restartedMain] INFO  com.jay.blog.BlogApplication - Starting BlogApplication on BXXX-XLS-谢杰 with PID 11308 (C:\Users\10134\Desktop\blog\target\classes started by lbx in C:\Users\10134\Desktop\blog)
+2020-11-23 19:01:24 [restartedMain] INFO  com.jay.blog.BlogApplication - The following profiles are active: dev
+2020-11-23 19:01:26 [restartedMain] INFO  com.jay.blog.BlogApplication - Started BlogApplication in 1.997 seconds (JVM running for 1322.059)
+2020-11-23 19:01:30 [main] INFO  com.jay.blog.service.Imp.BlogServiceImpTest - Started BlogServiceImpTest in 6.402 seconds (JVM running for 7.529)

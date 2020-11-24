@@ -24,22 +24,16 @@ class BlogApplicationTests {
 
     }
 
-    @Autowired
     BlogDao blogDao;
 
-    @Autowired
     CommentDao commentDao;
 
-    @Autowired
     TagDao tagDao;
 
-    @Autowired
     TypeDao typeDao;
 
-    @Autowired
     UserDao userDao;
 
-    @Autowired
     BlogServiceImp blogServiceImp;
 
     @Test

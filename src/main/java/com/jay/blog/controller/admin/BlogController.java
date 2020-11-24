@@ -3,6 +3,8 @@ package com.jay.blog.controller.admin;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jay.blog.entity.*;
+import com.jay.blog.search.mq.MqEsIndexMessage;
+import com.jay.blog.search.mq.RabbitMqMessageProducer;
 import com.jay.blog.service.Imp.BlogServiceImp;
 import com.jay.blog.service.Imp.TagServiceImp;
 import com.jay.blog.service.Imp.TypeServiceImp;
@@ -53,6 +55,9 @@ public class BlogController {
 
     @Autowired
     private TagServiceImp tagService;
+
+    @Autowired
+    private RabbitMqMessageProducer rabbitMqMessageProducer;
 
     @GetMapping
     public String blogs(@RequestParam(value = "pageNo", defaultValue = "1") Integer pageNo,
@@ -173,7 +178,8 @@ public class BlogController {
 
         if(ok != -1) {
             attributes.addAttribute("message", operate + " success");
-
+            MqEsIndexMessage message = new MqEsIndexMessage(blogVO.getId(), MqEsIndexMessage.CREATE_OR_UPDATE);
+            rabbitMqMessageProducer.publishMessage(message);
         }else {
             attributes.addAttribute("message", operate + " fail");
         }
@@ -185,10 +191,11 @@ public class BlogController {
     @GetMapping("/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes){
         int ok = blogService.deleteOne(id);
-        if(ok != 0)
+        if(ok != 0) {
             attributes.addAttribute("message","删除成功");
-        else
+        } else {
             attributes.addAttribute("message", "删除失败");
+        }
         return REDIRECT_LIST;
     }
 

@@ -146,8 +146,7 @@ public class IndexController {
         Integer pageSize = CommonUtils.DEFAULT_PAGE_SIZE;
         Page<BlogVO> resultPage = null;
         try {
-            throw new IOException();
-//           resultPage = searchService.search(pageNo, pageSize, query);
+           resultPage = searchService.search(pageNo, pageSize, query);
         }catch (Exception e){
             logger.error("es 搜索失败...走补偿机制");
             resultPage = blogService.searchListBlog(query, pageNo);

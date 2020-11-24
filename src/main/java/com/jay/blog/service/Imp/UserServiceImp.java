@@ -5,6 +5,7 @@ import com.jay.blog.dao.UserDao;
 import com.jay.blog.entity.User;
 import com.jay.blog.service.UserService;
 import com.jay.blog.utils.MD5Utils;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,13 +16,13 @@ import org.springframework.stereotype.Service;
  * @create: 2020-04-02 21:55
  **/
 @Service
+@AllArgsConstructor
 public class UserServiceImp implements UserService {
 
-    @Autowired
     private UserDao userDao;
 
+    @Override
     public User checkUser(User user){
-
         return userDao.selectOne(new QueryWrapper<User>()
                                             .eq("username", user.getUsername())
                                             .eq("password", MD5Utils.code(user.getPassword())));
@@ -31,7 +32,6 @@ public class UserServiceImp implements UserService {
     public User getOneById(Long id){
         return userDao.selectById(id);
     }
-
 
 
 }

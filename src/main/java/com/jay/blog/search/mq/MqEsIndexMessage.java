@@ -1,11 +1,14 @@
 package com.jay.blog.search.mq;
 
+import lombok.AllArgsConstructor;
+
 import java.io.Serializable;
 
 /**
  * @Author: xiejie
  * @Date: 2020/11/10 17:33
  */
+
 public class MqEsIndexMessage implements Serializable {
     // 消息类型
     public final static String CREATE_OR_UPDATE = "create_or_update";

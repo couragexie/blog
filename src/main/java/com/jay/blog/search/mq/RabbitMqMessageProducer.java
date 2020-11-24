@@ -22,7 +22,6 @@ public class RabbitMqMessageProducer {
     public void publishMessage(MqEsIndexMessage mqEsIndexMessage){
         logger.info("MQ publish message : message={}", mqEsIndexMessage);
         rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_NAME, RabbitmqConfig.ROUTING_KEY, mqEsIndexMessage);
-
     }
 
 

@@ -10,6 +10,5 @@ import org.springframework.stereotype.Repository;
  * @author: Jay
  * @create: 2020-04-01 17:34
  **/
-@Repository
 public interface UserDao extends BaseMapper<User> {
 }

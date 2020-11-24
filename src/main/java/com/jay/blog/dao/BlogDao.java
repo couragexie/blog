@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@Repository
 public interface BlogDao extends BaseMapper<Blog> {
 
     @Select("select * from b_blog where recommend=1 and published = true order by create_time desc limit #{size}")

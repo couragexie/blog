@@ -11,6 +11,5 @@ import org.springframework.stereotype.Repository;
  * @create: 2020-04-01 17:35
  **/
 
-@Repository
 public interface CommentDao extends BaseMapper<Comment> {
 }

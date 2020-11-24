@@ -13,10 +13,12 @@ import com.jay.blog.utils.CollectionsUtil;
 import com.jay.blog.utils.PageUtils;
 import com.jay.blog.vo.BlogQuery;
 import com.jay.blog.vo.BlogVO;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.javassist.NotFoundException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.text.SimpleDateFormat;
@@ -31,24 +33,15 @@ import java.util.stream.Collectors;
  **/
 @Slf4j
 @Service
+@AllArgsConstructor
 public class BlogServiceImp implements BlogService {
-    public static final ArrayList<Blog> VALUE = new ArrayList<>();
-    @Autowired
+    private final static Logger logger = LoggerFactory.getLogger(BlogServiceImp.class);
+
     private BlogDao blogDao;
-
-    @Autowired
-    private BlogContentDao blogContentDao;
-
-    @Autowired
+    private BlogContentMapper blogContentMapper;
     private BlogAndTagDao blogAndTagDao;
-
-    @Autowired
     private UserDao userDao;
-
-    @Autowired
     private TypeDao typeDao;
-
-    @Autowired
     private TagDao tagDao;
 
     // TODO 测试
@@ -136,12 +129,14 @@ public class BlogServiceImp implements BlogService {
      * */
     @Override
     public Page<BlogVO> searchListBlog(String query, int pageNo) {
+        logger.info(" >>>>> mysql 全文搜索， pageNo={}", pageNo);
         // 构建 page 查询，查询 blog 内容
         Page<BlogVO> resultPage = PageUtils.generatePage(pageNo);
         // 全文搜索，搜索字段 content 和 title
-        resultPage.setRecords(blogContentDao.listBlogContentByQuery(query,resultPage));
+        resultPage.setRecords(blogContentMapper.listBlogContentByQuery(query,resultPage));
         // 搜索关键字失败
         if (CollectionsUtil.checkListIsNull(resultPage.getRecords())) {
+            logger.info(">>>>> mysql 全文搜索为空...");
             return null;
         }
         return resultPage;
@@ -151,7 +146,7 @@ public class BlogServiceImp implements BlogService {
     @Override
     public BlogVO getBlogVOById(Long blogId){
         Blog blog =  blogDao.selectById(blogId);
-        BlogContent blogContent = blogContentDao.selectOneByBlogId(blogId);
+        BlogContent blogContent = blogContentMapper.selectOneByBlogId(blogId);
         User user = userDao.selectById(blog.getUserId());
         user.setPassword(null);
         Type type = typeDao.selectById(blog.getTypeId());
@@ -185,7 +180,7 @@ public class BlogServiceImp implements BlogService {
     @RedisCache(cacheNames = "blog", key = "#blogId", expire = 60*60*12)
     public BlogVO getBlogVObyIdToView(Long blogId){
         Blog blog = blogDao.selectById(blogId);
-        String contentHtml = blogContentDao.selectContentHtml(blogId);
+        String contentHtml = blogContentMapper.selectContentHtml(blogId);
         BlogVO blogVO = BlogVOConverter.blogToBlogVoExceptContent(blog);
         blogVO.setContentHtml(contentHtml);
         blog.setViews(blog.getViews()+1);
@@ -256,7 +251,7 @@ public class BlogServiceImp implements BlogService {
         blogDao.insert(blog);
         blogVO.setId(blog.getId());
         blogContent.setBlogId(blog.getId());
-        blogContentDao.insert(blogContent);
+        blogContentMapper.insert(blogContent);
         // 将 blogVO 中一个包含所有标签的String值转成List<Long>,
         // 然后再通过 Lambada 转成 List<BlogAndTag>
         //System.out.println("blogId" + blog.getId());
@@ -296,10 +291,11 @@ public class BlogServiceImp implements BlogService {
         blog.setUpdateTime(new Date());
         blogDao.updateById(blog);
         // 新增 blo_tag 关系表
-        for(BlogAndTag blogAndTag : blogAndTags)
+        for(BlogAndTag blogAndTag : blogAndTags) {
             blogAndTagDao.insert(blogAndTag);
+        }
         // 修改内容
-        int ok = blogContentDao.update(blogContent, new QueryWrapper<BlogContent>().eq("blog_id", blogContent.getBlogId()));
+        int ok = blogContentMapper.update(blogContent, new QueryWrapper<BlogContent>().eq("blog_id", blogContent.getBlogId()));
         log.info("修改博客成功！blogId={}, title={}", blog.getId(), blog.getTitle());
         return ok;
     }
@@ -311,7 +307,7 @@ public class BlogServiceImp implements BlogService {
     public int deleteOne(Long blogId) {
         blogDao.deleteById(blogId);
         blogAndTagDao.delete(new QueryWrapper<BlogAndTag>().eq("blog_id", blogId));
-        int ok =  blogContentDao.delete(blogId);
+        int ok =  blogContentMapper.delete(blogId);
         return ok;
     }
 

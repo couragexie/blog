@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
 public interface TypeDao extends BaseMapper<Type> {
 
     @Results(id = "typeVOResult", value={

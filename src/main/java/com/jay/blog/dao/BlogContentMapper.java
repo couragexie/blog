@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 
-public interface BlogContentDao extends BaseMapper<BlogContent> {
+public interface BlogContentMapper extends BaseMapper<BlogContent> {
     /* 返回 html 格式的内容*/
     @Select("SELECT content_html from b_blog_content where blog_id = #{blog_id}")
     public String selectContentHtml(long blog_id);

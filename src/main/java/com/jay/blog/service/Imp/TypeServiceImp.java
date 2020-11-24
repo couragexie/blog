@@ -11,6 +11,7 @@ import com.jay.blog.entity.Type;
 import com.jay.blog.service.TypeService;
 import com.jay.blog.vo.TagVO;
 import com.jay.blog.vo.TypeVO;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,8 +26,8 @@ import java.util.stream.Collectors;
  * @create: 2020-04-03 18:02
  **/
 @Service
+@AllArgsConstructor
 public class TypeServiceImp implements TypeService {
-    @Autowired
     private TypeDao typeDao;
 
     @Override

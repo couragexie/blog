@@ -8,6 +8,7 @@ import com.jay.blog.entity.Blog;
 import com.jay.blog.entity.Comment;
 import com.jay.blog.service.CommentService;
 import com.jay.blog.vo.CommentVO;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +23,8 @@ import java.util.stream.Collectors;
  * @create: 2020-04-07 11:34
  **/
 @Service
+@AllArgsConstructor
 public class CommentServiceImp implements CommentService {
-    @Autowired
     private CommentDao commentDao;
 
     public int saveComment(Comment comment){

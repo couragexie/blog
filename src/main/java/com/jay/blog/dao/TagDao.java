@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Map;
 
-@Repository
 public interface TagDao extends BaseMapper<Tag> {
 
     @Results(id = "tagVO", value = {

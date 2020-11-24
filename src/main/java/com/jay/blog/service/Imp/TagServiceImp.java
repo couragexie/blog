@@ -11,6 +11,7 @@ import com.jay.blog.entity.BlogAndTag;
 import com.jay.blog.entity.Tag;
 import com.jay.blog.service.TagService;
 import com.jay.blog.vo.TagVO;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.stereotype.Service;
@@ -25,12 +26,12 @@ import java.util.stream.Collectors;
  * @create: 2020-04-04 14:49
  **/
 @Service
+@AllArgsConstructor
 @CacheConfig(cacheNames = "tag")
 public class TagServiceImp implements TagService {
-    @Autowired
+
     private TagDao tagDao;
 
-    @Autowired
     private BlogAndTagDao blogAndTagDao;
 
     @Override
